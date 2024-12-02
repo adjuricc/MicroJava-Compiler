@@ -1,0 +1,69 @@
+INFO  01:52:13,649 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  01:52:13,663 - #2 program
+INFO  01:52:13,663 - #37 test301
+INFO  01:52:13,663 - #3 {
+INFO  01:52:13,664 - #13 void
+INFO  01:52:13,664 - #14 main
+INFO  01:52:13,664 - #6 (
+INFO  01:52:13,665 - #7 )
+INFO  01:52:13,665 - #3 {
+INFO  01:52:13,665 - #11 print
+INFO  01:52:13,665 - #6 (
+INFO  01:52:13,665 - #36 1
+INFO  01:52:13,665 - #7 )
+INFO  01:52:13,665 - #5 ;
+INFO  01:52:13,665 - #11 print
+INFO  01:52:13,666 - #6 (
+INFO  01:52:13,666 - #36 2
+INFO  01:52:13,666 - #7 )
+INFO  01:52:13,666 - #5 ;
+INFO  01:52:13,666 - #4 }
+INFO  01:52:13,666 - #4 }
+INFO  01:52:13,672 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoConstDecl(
+  ) [NoConstDecl]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MainMethod(
+      ) [MainMethod]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          PrintStmt(
+            TermExpr(
+              CommonTerm(
+                Const(
+                 1
+                ) [Const]
+              ) [CommonTerm]
+            ) [TermExpr]
+          ) [PrintStmt]
+        ) [Statements]
+        PrintStmt(
+          TermExpr(
+            CommonTerm(
+              Const(
+               2
+              ) [Const]
+            ) [CommonTerm]
+          ) [TermExpr]
+        ) [PrintStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  01:52:13,673 - ===================================
+INFO  01:52:13,674 - Obradjuje se funkija main
+INFO  01:52:13,675 - Print count calls = 0
+INFO  01:52:13,675 - VarDecl count = 0
+INFO  01:52:13,675 - ===================================

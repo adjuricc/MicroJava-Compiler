@@ -1,0 +1,75 @@
+package rs.ac.bg.etf.pp1;
+
+import org.apache.log4j.Logger;
+
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.etf.pp1.symboltable.*;
+import rs.etf.pp1.symboltable.concepts.*;
+
+public class SemanticPass extends VisitorAdaptor {
+	int printCallCount = 0;
+	int varDeclCnt = 0;
+	boolean errorDetected = false;
+	Logger log = Logger.getLogger(getClass());
+	
+	public void visit(PrintStmt PrintStmt) { 
+		printCallCount++;
+		log.info("Prepoznata naredba print!");
+	}
+	
+	public void visit(VarDecl vardecl) { 
+		varDeclCnt++;
+		VarList vardecl_list = vardecl.getVarList();
+		
+		while(vardecl_list instanceof VarListMany) {
+			VarListMany varlist_many = (VarListMany) vardecl_list;
+			
+			VarType var_type = varlist_many.getVarType();
+			VarArrayOpt var_array_opt = var_type.getVarArrayOpt();
+			
+			log.info(var_type.getName());
+			
+			if(var_array_opt instanceof VarNoArray) {
+				
+				Obj var_node = Tab.insert(Obj.Var, var_type.getName(), vardecl.getType().struct);
+			}
+			else {
+				Struct s = new Struct(Struct.Array);
+				s.setElementType(vardecl.getType().struct);
+				Obj var_node = Tab.insert(Obj.Var, var_type.getName(), s);
+			}
+			
+			vardecl_list = varlist_many.getVarList();
+		}
+		
+		if(vardecl_list instanceof VarListOne){
+			VarType var_type = ((VarListOne) vardecl_list).getVarType();
+			VarArrayOpt var_array_opt = var_type.getVarArrayOpt();
+			
+			if(var_array_opt instanceof VarNoArray) {
+				Obj var_node = Tab.insert(Obj.Var, var_type.getName(), vardecl.getType().struct);
+			}
+			else {
+				Struct s = new Struct(Struct.Array);
+				s.setElementType(vardecl.getType().struct);
+				Obj var_node = Tab.insert(Obj.Var, var_type.getName(), s);
+			}
+		}
+			
+	}
+	
+	public void visit(ProgName progName) {
+		log.info(progName.getProgName());
+		progName.obj = Tab.insert(Obj.Prog, progName.getProgName(), Tab.noType);
+		Tab.openScope();
+	}
+	
+	public void visit(Program program) {
+		Tab.chainLocalSymbols(program.getProgName().obj);
+		Tab.closeScope();
+	}
+	
+	public boolean passed(){
+        return !errorDetected;
+    }
+}

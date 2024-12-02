@@ -1,0 +1,49 @@
+package rs.ac.bg.etf.pp1;
+
+import rs.ac.bg.etf.pp1.CounterVisitor.VarCounter;
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.etf.pp1.mj.runtime.Code;
+import rs.etf.pp1.symboltable.Tab;
+
+public class CodeGenerator extends VisitorAdaptor {
+	private int mainPc;
+	
+	public int getMainPc() {
+		return mainPc;
+	}
+	
+	public void visit(PrintStmt visitor) {
+		if(visitor.getExpr().struct == Tab.intType) {
+			Code.loadConst(5);
+			Code.put(Code.print);
+		}
+		else {
+			Code.loadConst(1);
+			Code.put(Code.bprint);
+		}
+	}
+	
+	public void visit(MainMethod visitor) {
+		System.out.println("WTF");
+		System.out.println(Code.pc);
+		mainPc = Code.pc;
+		visitor.obj.setAdr(Code.pc);
+		
+		SyntaxNode methodNode = visitor.getParent();
+		
+		VarCounter var_cnt = new VarCounter();
+		methodNode.traverseTopDown(var_cnt);
+		
+		// Generate entry
+		Code.put(Code.enter);
+		Code.put(0);
+		Code.put(2); // var_cnt.getCount()
+		
+		// exit u method decl
+	}
+	
+	public void visit(MethodDecl visitor) {
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+	}
+}

@@ -1,0 +1,95 @@
+INFO  15:12:52,712 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  15:12:52,730 - #2 program
+INFO  15:12:52,730 - #34 MJProgram
+INFO  15:12:52,731 - #3 {
+INFO  15:12:52,731 - #34 int
+INFO  15:12:52,732 - #34 main
+INFO  15:12:52,732 - #6 (
+INFO  15:12:52,732 - #7 )
+INFO  15:12:52,732 - #3 {
+INFO  15:12:52,732 - #34 int
+INFO  15:12:52,732 - #34 x
+ERROR 15:12:52,733 - 
+Sintaksna greska na liniji 4, value: x
+INFO  15:12:52,733 - #10 ,
+INFO  15:12:52,733 - #34 y
+INFO  15:12:52,733 - #5 ;
+INFO  15:12:52,734 - #34 x
+INFO  15:12:52,734 - #29 =
+INFO  15:12:52,734 - #33 6
+ERROR 15:12:52,734 - Izvrsen oporavak do ; u liniji 4
+INFO  15:12:52,735 - #5 ;
+INFO  15:12:52,738 - #34 y
+INFO  15:12:52,738 - #29 =
+INFO  15:12:52,738 - #33 3
+INFO  15:12:52,738 - #5 ;
+INFO  15:12:52,738 - #34 int
+INFO  15:12:52,738 - #34 z
+ERROR 15:12:52,738 - 
+Sintaksna greska na liniji 8, value: z
+INFO  15:12:52,738 - #29 =
+INFO  15:12:52,739 - #34 x
+INFO  15:12:52,739 - #9 +
+INFO  15:12:52,739 - #34 y
+INFO  15:12:52,739 - #5 ;
+INFO  15:12:52,739 - #4 }
+INFO  15:12:52,739 - #4 }
+ERROR 15:12:52,739 - Izvrsen oporavak do ; u liniji 8
+INFO  15:12:52,740 - Program(
+ MJProgram
+  NoConstDecl(
+  ) [NoConstDecl]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              NoStmt(
+              ) [NoStmt]
+              ErrorStmt(
+              ) [ErrorStmt]
+            ) [Statements]
+            Assignment(
+              Designator(
+               x
+              ) [Designator]
+              TermExpr(
+                Term(
+                  Const(
+                   6
+                  ) [Const]
+                ) [Term]
+              ) [TermExpr]
+            ) [Assignment]
+          ) [Statements]
+          Assignment(
+            Designator(
+             y
+            ) [Designator]
+            TermExpr(
+              Term(
+                Const(
+                 3
+                ) [Const]
+              ) [Term]
+            ) [TermExpr]
+          ) [Assignment]
+        ) [Statements]
+        ErrorStmt(
+        ) [ErrorStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  15:12:52,740 - ===================================
+INFO  15:12:52,741 - Print count calls = 0
+INFO  15:12:52,741 - VarDecl count = 0

@@ -1,0 +1,208 @@
+
+
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left).append(", value: ").append(((Symbol)info).value);
+        log.error(msg.toString());
+    }
+
+
+:}
+
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+terminal PROG, LBRACE, RBRACE, SEMI, LPAREN, RPAREN, RETURN, PLUS, COMMA, PRINT, READ, VOID, MAIN,  LSQBRACE, RSQBRACE, NEW;
+terminal MINUS, MUL, DIV, MOD, PLUSPLUS, MINUSMINUS;
+terminal EQUAL, NEQUAL, GREATER, GEQUAL, LESS, LEQUAL, AND, OR;
+terminal ASSIGN, COLON, DOT, CONST;
+terminal Integer INT;
+terminal String IDENT;
+terminal String BOOL;
+terminal String CHAR;
+
+nonterminal VarArrayOpt VarArrayOpt;
+nonterminal VarDeclList VarDeclList;
+nonterminal VarDecl VarDecl;
+nonterminal VarType VarType;
+nonterminal VarList VarList;
+nonterminal ConstDeclList ConstDeclList;
+nonterminal ConstDecl ConstDecl;
+nonterminal ConstDef ConstDef;
+nonterminal ConstList ConstList;
+nonterminal MethodDeclList MethodDeclList;
+nonterminal MethodDecl MethodDecl;
+nonterminal StatementList StatementList;
+nonterminal Statement Statement;
+nonterminal  Addop Addop;
+nonterminal Relop Relop;
+nonterminal Mulop Mulop;
+nonterminal Assignop Assignop;
+nonterminal DesignatorPart DesignatorPart;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj MainMethod;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Factor, Expr, ConstVal;
+
+Program ::= (Program) PROG ProgName:p ConstDeclList:C1 VarDeclList:V2 LBRACE MethodDeclList:M3 RBRACE {: RESULT=new Program(p, C1, V2, M3); RESULT.setLine(pleft); :};
+
+ProgName ::= (ProgName) IDENT:progName {: RESULT=new ProgName(progName); RESULT.setLine(progNameleft); :};
+
+ConstDeclList ::= (ConstDeclarations) ConstDeclList:C1 ConstDecl:C2 {: RESULT=new ConstDeclarations(C1, C2); RESULT.setLine(C1left); :}
+			|
+			(NoConstDecl) {: RESULT=new NoConstDecl(); :} /* epsilon */
+			;
+
+ConstDecl ::= (ConstDecl) CONST Type:T1 ConstList:C2 SEMI {: RESULT=new ConstDecl(T1, C2); RESULT.setLine(T1left); :};
+
+ConstList ::= (ConstListMany) ConstList:C1 COMMA ConstDef:C2 {: RESULT=new ConstListMany(C1, C2); RESULT.setLine(C1left); :}
+			| (ConstListOne) ConstDef:C1 {: RESULT=new ConstListOne(C1); RESULT.setLine(C1left); :};
+
+ConstDef ::= (ConstDef) IDENT:I1 ASSIGN ConstVal:C2 {: RESULT=new ConstDef(I1, C2); RESULT.setLine(I1left); :};
+			
+ConstVal ::= (ConstNumber) INT:I1 {: RESULT=new ConstNumber(I1); RESULT.setLine(I1left); :}
+			| (ConstChar) CHAR:C1 {: RESULT=new ConstChar(C1); RESULT.setLine(C1left); :}
+			| (ConstBool) BOOL:B1 {: RESULT=new ConstBool(B1); RESULT.setLine(B1left); :};
+			
+VarDeclList ::= (VarDeclarations) VarDeclList:V1 VarDecl:V2 {: RESULT=new VarDeclarations(V1, V2); RESULT.setLine(V1left); :}
+			|
+			(NoVarDecl) {: RESULT=new NoVarDecl(); :} /* epsilon */
+			;
+
+VarDecl ::= (VarDecl) Type:T1 VarList:V2 SEMI {: RESULT=new VarDecl(T1, V2); RESULT.setLine(T1left); :};
+
+VarList ::= (VarListMany) VarList:V1 COMMA VarType:V2 {: RESULT=new VarListMany(V1, V2); RESULT.setLine(V1left); :}
+			| (VarListOne) VarType:V1 {: RESULT=new VarListOne(V1); RESULT.setLine(V1left); :};
+			
+VarType ::= (VarType) IDENT:name VarArrayOpt:V1 {: RESULT=new VarType(name, V1); RESULT.setLine(nameleft); :};
+		
+
+VarArrayOpt ::= (VarArray) LSQBRACE RSQBRACE {: RESULT=new VarArray(); :}
+			|
+			(VarMatrix) LSQBRACE RSQBRACE LSQBRACE RSQBRACE {: RESULT=new VarMatrix(); :}
+			|
+			(VarNoArray) {: RESULT=new VarNoArray(); :} /* epsilon */
+			;
+		
+
+Type ::= (Type) IDENT:I1 {: RESULT=new Type(I1); RESULT.setLine(I1left); :};
+
+MethodDeclList ::= (MethodDeclarations) MethodDeclList:M1 MethodDecl:M2 {: RESULT=new MethodDeclarations(M1, M2); RESULT.setLine(M1left); :}
+				|
+				(NoMethodDecl) {: RESULT=new NoMethodDecl(); :} /* epsilon */
+				;
+				
+MethodDecl ::= (MethodDecl) MainMethod:M1 LPAREN RPAREN VarDeclList:V2 LBRACE StatementList:S3 RBRACE {: RESULT=new MethodDecl(M1, V2, S3); RESULT.setLine(M1left); :};
+
+MainMethod ::= (MainMethod) VOID MAIN {: RESULT=new MainMethod(); :};
+
+StatementList ::= (Statements) StatementList:S1 Statement:S2 {: RESULT=new Statements(S1, S2); RESULT.setLine(S1left); :}
+				|
+				(NoStmt) {: RESULT=new NoStmt(); :} /* epsilon */
+				;
+
+Statement ::= (Assignment) Designator:dest ASSIGN Expr:e SEMI {: RESULT=new Assignment(dest, e); RESULT.setLine(destleft); :}
+		   |
+		   (PlusPlusStmt) Designator:D1 PLUSPLUS SEMI {: RESULT=new PlusPlusStmt(D1); RESULT.setLine(D1left); :}
+		   |
+		   (MinusMinusStmt) Designator:D1 MINUSMINUS SEMI {: RESULT=new MinusMinusStmt(D1); RESULT.setLine(D1left); :}
+		   |
+		   (ErrorStmt) error SEMI:l
+		   {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null);  :} {: RESULT=new ErrorStmt(); :}
+		   |
+		   (PrintStmt) PRINT LPAREN Expr:E1 RPAREN SEMI {: RESULT=new PrintStmt(E1); RESULT.setLine(E1left); :}
+		   |
+		   (ReadStmt) READ LPAREN Designator:D1 RPAREN SEMI {: RESULT=new ReadStmt(D1); RESULT.setLine(D1left); :}
+		   |
+		   (ReturnExpr) RETURN Expr:t SEMI {: RESULT=new ReturnExpr(t); RESULT.setLine(tleft); :}
+		   |
+		   (ReturnNoExpr) RETURN SEMI {: RESULT=new ReturnNoExpr(); :}
+		   ;
+			
+Expr ::= (AddExpr) Expr:te Addop:A1 Term:t {: RESULT=new AddExpr(te, A1, t); RESULT.setLine(teleft); :}
+	 	|
+	 	(TermExpr) Term:t {: RESULT=new TermExpr(t); RESULT.setLine(tleft); :}
+	 	|
+	 	(NegTermExpr) MINUS Term:T1 {: RESULT=new NegTermExpr(T1); RESULT.setLine(T1left); :}
+	 	;
+	 	
+Term ::= (CommonTerm) Factor:t {: RESULT=new CommonTerm(t); RESULT.setLine(tleft); :}
+		|
+		(MulopTerm) Term:T1 Mulop:M2 Factor:F3 {: RESULT=new MulopTerm(T1, M2, F3); RESULT.setLine(T1left); :}
+		;
+
+Factor ::= (Const) INT:I1 {: RESULT=new Const(I1); RESULT.setLine(I1left); :}
+		|
+		(FactorBool) BOOL:B1 {: RESULT=new FactorBool(B1); RESULT.setLine(B1left); :}
+		|
+		(FactorChar) CHAR:C1 {: RESULT=new FactorChar(C1); RESULT.setLine(C1left); :}
+		|
+		(Var) Designator:d {: RESULT=new Var(d); RESULT.setLine(dleft); :}
+		|
+	 	(FactorParen) LPAREN Expr:E1 RPAREN {: RESULT=new FactorParen(E1); RESULT.setLine(E1left); :}
+	 	|
+	 	(NewExpr) NEW Type:T1 LSQBRACE Expr:E2 RSQBRACE {: RESULT=new NewExpr(T1, E2); RESULT.setLine(T1left); :}
+	 	|
+	 	(NewFactorMatrix) NEW Type:T1 LSQBRACE Expr:E2 RSQBRACE LSQBRACE Expr:E3 RSQBRACE {: RESULT=new NewFactorMatrix(T1, E2, E3); RESULT.setLine(T1left); :}
+		;
+				
+Designator ::= (Designator) IDENT:name DesignatorPart:D1 {: RESULT=new Designator(name, D1); RESULT.setLine(nameleft); :};
+
+DesignatorPart ::= (DesignatorArray) LSQBRACE Expr:E1 RSQBRACE {: RESULT=new DesignatorArray(E1); RESULT.setLine(E1left); :}
+				|
+				(DesignatorMatrix) LSQBRACE Expr:E1 RSQBRACE LSQBRACE Expr:E2 RSQBRACE {: RESULT=new DesignatorMatrix(E1, E2); RESULT.setLine(E1left); :}
+				|
+				(DesignatorNoPart) {: RESULT=new DesignatorNoPart(); :} /* epsilon */
+				;
+
+
+Assignop ::= (Assignop) ASSIGN {: RESULT=new Assignop(); :};
+
+Relop ::= (RelopEqual) EQUAL {: RESULT=new RelopEqual(); :}
+		| (RelopNEqual) NEQUAL {: RESULT=new RelopNEqual(); :}
+		| (RelopGreater) GREATER {: RESULT=new RelopGreater(); :}
+		| (RelopGEqual) GEQUAL {: RESULT=new RelopGEqual(); :}
+		| (RelopLess) LESS {: RESULT=new RelopLess(); :}
+		| (RelopLEqual) LEQUAL {: RESULT=new RelopLEqual(); :}
+		; 
+
+Addop ::= (AddopPlus) PLUS {: RESULT=new AddopPlus(); :}
+		| (AddopMinus) MINUS {: RESULT=new AddopMinus(); :}
+		;
+		
+Mulop ::= (MulopMul) MUL {: RESULT=new MulopMul(); :}
+		| (MulopDiv) DIV {: RESULT=new MulopDiv(); :}
+		| (MulopMod) MOD {: RESULT=new MulopMod(); :}
+		;

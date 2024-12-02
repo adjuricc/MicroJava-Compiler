@@ -1,0 +1,56 @@
+INFO  11:55:25,309 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  11:55:25,323 - #2 program
+INFO  11:55:25,323 - #34 MJProgram
+INFO  11:55:25,323 - #32 const
+INFO  11:55:25,323 - #34 char
+INFO  11:55:25,324 - #34 x
+INFO  11:55:25,324 - #29 =
+INFO  11:55:25,324 - #36 'a'
+INFO  11:55:25,324 - #5 ;
+INFO  11:55:25,326 - #34 int
+INFO  11:55:25,327 - #34 a
+INFO  11:55:25,328 - #10 ,
+INFO  11:55:25,328 - #34 b
+INFO  11:55:25,328 - #5 ;
+INFO  11:55:25,330 - Program(
+ MJProgram
+  ConstDeclarations(
+    NoConstDecl(
+    ) [NoConstDecl]
+    ConstDecl(
+      Type(
+       char
+      ) [Type]
+      ConstListOne(
+        ConstDef(
+         x
+          ConstChar(
+           'a'
+          ) [ConstChar]
+        ) [ConstDef]
+      ) [ConstListOne]
+    ) [ConstDecl]
+  ) [ConstDeclarations]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarListMany(
+        VarListOne(
+          VarTypeIdent(
+           a
+          ) [VarTypeIdent]
+        ) [VarListOne]
+        VarTypeIdent(
+         b
+        ) [VarTypeIdent]
+      ) [VarListMany]
+    ) [VarDecl]
+  ) [VarDeclarations]
+) [Program]
+INFO  11:55:25,331 - ===================================
+INFO  11:55:25,334 - Print count calls = 0
+INFO  11:55:25,334 - VarDecl count = 1

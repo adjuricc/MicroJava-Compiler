@@ -1,0 +1,4 @@
+program MJProgram
+
+const int x = 5, y = 3;
+int a, b;

@@ -1,0 +1,7 @@
+program MJProgram
+{
+	int main(){
+		int x, y;
+		x = 6;
+	}
+}

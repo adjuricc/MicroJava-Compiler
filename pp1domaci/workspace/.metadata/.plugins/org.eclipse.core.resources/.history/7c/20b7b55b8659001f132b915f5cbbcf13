@@ -1,0 +1,7 @@
+program MJProgram
+	int _x, y;
+{
+	void main() {
+		
+	}
+}

@@ -1,0 +1,36 @@
+// Test301
+
+program test301
+	const int nula = 0;
+	const int jedan = 1;
+	const int pet = 5;
+	
+	int niz[];
+	char nizch[];
+	
+	int a;
+{
+    void main() 
+    	int bodovi;
+    	bool bt;
+    {	
+    	bodovi = 0;
+		bodovi++;
+		bodovi = bodovi + jedan;
+		bodovi = bodovi * pet;
+		bodovi--;
+		print(bodovi);
+		
+		niz = new int[3];
+		niz[0] = 3;
+		
+		nizch = new char[3];
+		
+		a=1;
+		read(bodovi);
+		print(bodovi);
+		bodovi = -bodovi + (pet * a / 2 - jedan) * bodovi - (3 % 2 + 3 * 2 - 3); 
+		print(bodovi);
+
+    }
+}

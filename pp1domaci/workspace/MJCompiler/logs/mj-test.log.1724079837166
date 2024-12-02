@@ -1,0 +1,197 @@
+INFO  15:37:43,828 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  15:37:43,839 - #2 program
+INFO  15:37:43,839 - #34 MJProgram
+INFO  15:37:43,839 - #34 int
+INFO  15:37:43,840 - #34 x
+INFO  15:37:43,840 - #10 ,
+INFO  15:37:43,841 - #34 y
+INFO  15:37:43,841 - #13 [
+INFO  15:37:43,841 - #14 ]
+INFO  15:37:43,841 - #5 ;
+INFO  15:37:43,841 - #34 bool
+INFO  15:37:43,841 - #34 found
+INFO  15:37:43,842 - #5 ;
+INFO  15:37:43,842 - #34 char
+INFO  15:37:43,842 - #34 c
+INFO  15:37:43,842 - #5 ;
+INFO  15:37:43,842 - #3 {
+INFO  15:37:43,842 - #34 int
+INFO  15:37:43,842 - #34 main
+INFO  15:37:43,842 - #6 (
+INFO  15:37:43,843 - #7 )
+INFO  15:37:43,843 - #3 {
+INFO  15:37:43,851 - #34 y
+INFO  15:37:43,851 - #29 =
+INFO  15:37:43,851 - #33 3
+INFO  15:37:43,851 - #5 ;
+INFO  15:37:43,852 - #34 x
+INFO  15:37:43,852 - #29 =
+INFO  15:37:43,852 - #34 y
+INFO  15:37:43,852 - #9 +
+INFO  15:37:43,852 - #33 5
+INFO  15:37:43,853 - #5 ;
+INFO  15:37:43,853 - #34 found
+INFO  15:37:43,853 - #29 =
+INFO  15:37:43,853 - #35 true
+INFO  15:37:43,853 - #5 ;
+INFO  15:37:43,853 - #34 c
+INFO  15:37:43,853 - #29 =
+INFO  15:37:43,853 - #36 'a'
+INFO  15:37:43,853 - #5 ;
+INFO  15:37:43,853 - #11 print
+INFO  15:37:43,853 - #6 (
+INFO  15:37:43,853 - #34 x
+INFO  15:37:43,853 - #7 )
+INFO  15:37:43,854 - #5 ;
+INFO  15:37:43,854 - #8 return
+INFO  15:37:43,854 - #5 ;
+INFO  15:37:43,854 - #4 }
+INFO  15:37:43,854 - #4 }
+INFO  15:37:43,855 - Program(
+ MJProgram
+  NoConstDecl(
+  ) [NoConstDecl]
+  VarDeclarations(
+    VarDeclarations(
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          VarListMany(
+            VarListOne(
+              VarTypeIdent(
+               x
+              ) [VarTypeIdent]
+            ) [VarListOne]
+            VarTypeArray(
+             y
+            ) [VarTypeArray]
+          ) [VarListMany]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      VarDecl(
+        Type(
+         bool
+        ) [Type]
+        VarListOne(
+          VarTypeIdent(
+           found
+          ) [VarTypeIdent]
+        ) [VarListOne]
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       char
+      ) [Type]
+      VarListOne(
+        VarTypeIdent(
+         c
+        ) [VarTypeIdent]
+      ) [VarListOne]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                Statements(
+                  NoStmt(
+                  ) [NoStmt]
+                  Assignment(
+                    Designator(
+                     y
+                    ) [Designator]
+                    TermExpr(
+                      Term(
+                        Const(
+                         3
+                        ) [Const]
+                      ) [Term]
+                    ) [TermExpr]
+                  ) [Assignment]
+                ) [Statements]
+                Assignment(
+                  Designator(
+                   x
+                  ) [Designator]
+                  AddExpr(
+                    TermExpr(
+                      Term(
+                        Var(
+                          Designator(
+                           y
+                          ) [Designator]
+                        ) [Var]
+                      ) [Term]
+                    ) [TermExpr]
+                    AddopPlus(
+                    ) [AddopPlus]
+                    Term(
+                      Const(
+                       5
+                      ) [Const]
+                    ) [Term]
+                  ) [AddExpr]
+                ) [Assignment]
+              ) [Statements]
+              Assignment(
+                Designator(
+                 found
+                ) [Designator]
+                TermExpr(
+                  Term(
+                    FactorBool(
+                     true
+                    ) [FactorBool]
+                  ) [Term]
+                ) [TermExpr]
+              ) [Assignment]
+            ) [Statements]
+            Assignment(
+              Designator(
+               c
+              ) [Designator]
+              TermExpr(
+                Term(
+                  FactorChar(
+                   'a'
+                  ) [FactorChar]
+                ) [Term]
+              ) [TermExpr]
+            ) [Assignment]
+          ) [Statements]
+          PrintStmt(
+            TermExpr(
+              Term(
+                Var(
+                  Designator(
+                   x
+                  ) [Designator]
+                ) [Var]
+              ) [Term]
+            ) [TermExpr]
+          ) [PrintStmt]
+        ) [Statements]
+        ReturnNoExpr(
+        ) [ReturnNoExpr]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  15:37:43,856 - ===================================
+INFO  15:37:43,856 - Prepoznata naredba print!
+INFO  15:37:43,858 - Print count calls = 1
+INFO  15:37:43,858 - VarDecl count = 3

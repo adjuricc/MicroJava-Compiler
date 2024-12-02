@@ -1,0 +1,34 @@
+// Test301
+
+program test301
+
+	const int nula = 0;
+	const int jedan = 1;
+	const int pet = 5;
+
+	int niz[], niz2[];
+	char nizch[];
+	int mat[][], mat2[][];
+
+	int a;
+	
+{
+	void main()	
+		int bodovi;
+		bool bt;
+	{
+		mat = new int[2][3];
+		mat2 = new int[2][3];
+		mat[nula][jedan - 1] = jedan;
+		read(mat[0][1]);
+		print(mat[0][1]);
+		mat[0][mat[0][1]] = 5;
+		
+		
+		print(mat[1][2]);
+		print(mat[0][2]);
+
+	}
+}
+
+

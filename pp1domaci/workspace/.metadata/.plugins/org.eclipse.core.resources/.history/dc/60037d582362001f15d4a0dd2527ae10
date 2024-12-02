@@ -1,0 +1,8 @@
+program EqualDeclaration
+	int mat[][];
+{
+    void main()
+    {
+        
+    }
+}

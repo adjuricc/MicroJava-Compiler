@@ -1,0 +1,179 @@
+package rs.ac.bg.etf.pp1;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+import rs.ac.bg.etf.pp1.CounterVisitor.VarCounter;
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.etf.pp1.mj.runtime.Code;
+import rs.etf.pp1.symboltable.Tab;
+import rs.etf.pp1.symboltable.concepts.Obj;
+import rs.etf.pp1.symboltable.concepts.Struct;
+
+public class CodeGenerator extends VisitorAdaptor {
+	private int mainPc;
+	
+	public int getMainPc() {
+		return mainPc;
+	}
+	
+	public void visit(PrintStmt visitor) {
+		if(visitor.getExpr().struct == MyTab.intType || visitor.getExpr().struct == MyTab.boolType) {
+			Code.loadConst(5);
+			Code.put(Code.print);
+		}
+		else {
+			Code.loadConst(5);
+			Code.put(Code.bprint);
+		}
+	}
+	
+	public void visit(ReadStmt visitor) {
+		if(visitor.getDesignator().obj.getKind() == Struct.Int) {
+			Code.put(Code.read);
+	        Code.store(visitor.getDesignator().obj);
+		}
+		else if(visitor.getDesignator().obj.getKind() == Struct.Char) {
+			Code.put(Code.bread);
+	        Code.store(visitor.getDesignator().obj);
+		}
+		
+	}
+	
+	public void visit(MainMethod visitor) {
+		mainPc = Code.pc;
+		visitor.obj.setAdr(Code.pc);
+		
+		SyntaxNode methodNode = visitor.getParent();
+		
+		VarCounter var_cnt = new VarCounter();
+		methodNode.traverseTopDown(var_cnt);
+		
+		// Generate entry
+		Code.put(Code.enter);
+		Code.put(0);
+		Code.put(visitor.obj.getLocalSymbols().size()); // var_cnt.getCount()
+		
+		// exit u method decl
+	}
+	
+	public void visit(MethodDecl visitor) {
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+	}
+	
+	public void visit(Const visitor) {
+		System.out.println("uslo u const " + visitor.getI1());
+		Obj con = Tab.insert(Obj.Con, "$", visitor.struct);
+		con.setLevel(0);
+        con.setAdr(visitor.getI1());
+        Code.load(con);
+	}
+	
+	public void visit(FactorChar visitor) {
+		Obj con = Tab.insert(Obj.Con, "$", visitor.struct);
+		con.setLevel(0);
+        con.setAdr(visitor.getC1().charAt(1));
+        Code.load(con);
+	}
+	
+	public void visit(NewExpr visitor) {
+		Code.put(Code.newarray);
+		if(visitor.getType().struct == MyTab.intType || visitor.getType().struct == MyTab.boolType)
+			Code.put(1);
+		else
+			Code.put(0);
+	}
+	
+	public void visit(FactorBool visitor) {
+		Obj con = Tab.insert(Obj.Con, "$", visitor.struct);
+		con.setLevel(0);
+		int flag = 1;
+		if(visitor.getB1().equals("false"))
+			flag = 0;
+        con.setAdr(flag);
+        Code.load(con);
+	}
+	
+	public void visit(Assignment visitor) {
+		// treba da napravimo razliku izmedju assignment za niz i obicnog
+		// if za nizs
+		Designator designator = visitor.getDesignator();
+		
+		if(designator.getDesignatorPart() instanceof DesignatorArray) {
+			System.out.println("uslo");
+			Code.put(Code.dup_x1);
+			if (designator.obj.getType() == Tab.charType)
+				Code.put(Code.bastore);
+			else {
+				
+		      	Code.put(Code.astore);
+		     }
+		}
+		else {
+			Code.store(designator.obj);
+		}
+//		if(designator.obj.getType().getKind() != Struct.Array) {
+//			System.out.println("uslo");
+//			if (designator.obj.getType() == Tab.charType)
+//                Code.put(Code.bastore);
+//            else {
+//            	 Code.put(Code.astore);
+//            }
+//		}
+		
+	}
+	
+	public void visit(PlusPlusStmt visitor) {
+		Designator designator = visitor.getDesignator();
+		Code.load(designator.obj);
+		Code.put(Code.const_1);
+		Code.put(Code.add);
+		Code.store(designator.obj);
+	}
+	
+	public void visit(MinusMinusStmt visitor) {
+		Designator designator = visitor.getDesignator();
+		Code.load(designator.obj);
+		Code.put(Code.const_1);
+		Code.put(Code.sub);
+		Code.store(designator.obj);
+	}
+	
+	public void visit(Designator visitor) {
+		SyntaxNode parent = visitor.getParent();
+		
+		// ako je rvalue treba samo da ga ucitamo
+		if(Assignment.class != parent.getClass()) {
+
+			
+			Code.load(visitor.obj);
+		}
+	}
+	
+	public void visit(AddExpr visitor) {
+		if(visitor.getAddop() instanceof AddopPlus) {
+			Code.put(Code.add);
+		}
+			
+		else if(visitor.getAddop() instanceof AddopMinus)
+			Code.put(Code.sub);
+	}
+	
+	public void visit(NegTermExpr visitor) {
+		Code.put(Code.neg);
+		System.out.println("neg");
+	}
+	
+	public void visit(MulopTerm visitor) {
+		if(visitor.getMulop() instanceof MulopMul)
+			Code.put(Code.mul);
+		else if(visitor.getMulop() instanceof MulopDiv)
+			Code.put(Code.div);
+		else if(visitor.getMulop() instanceof MulopMod)
+			Code.put(Code.rem);
+	}
+}

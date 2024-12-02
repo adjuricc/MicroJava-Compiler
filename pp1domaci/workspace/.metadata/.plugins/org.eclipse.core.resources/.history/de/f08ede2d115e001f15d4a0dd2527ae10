@@ -1,0 +1,4 @@
+program MJProgram
+
+const char x = 'a';
+int a, b;

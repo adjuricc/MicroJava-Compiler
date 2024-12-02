@@ -1,0 +1,163 @@
+INFO  04:17:12,096 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  04:17:12,111 - #2 program
+INFO  04:17:12,111 - #37 test301
+INFO  04:17:12,111 - #35 const
+INFO  04:17:12,112 - #37 int
+INFO  04:17:12,112 - #37 nula
+INFO  04:17:12,113 - #32 =
+INFO  04:17:12,113 - #36 0
+INFO  04:17:12,113 - #5 ;
+INFO  04:17:12,113 - #35 const
+INFO  04:17:12,114 - #37 int
+INFO  04:17:12,114 - #37 jedan
+INFO  04:17:12,114 - #32 =
+INFO  04:17:12,114 - #36 1
+INFO  04:17:12,114 - #5 ;
+INFO  04:17:12,114 - #35 const
+INFO  04:17:12,114 - #37 int
+INFO  04:17:12,114 - #37 pet
+INFO  04:17:12,114 - #32 =
+INFO  04:17:12,114 - #36 5
+INFO  04:17:12,115 - #5 ;
+INFO  04:17:12,115 - #37 int
+INFO  04:17:12,115 - #37 a
+INFO  04:17:12,115 - #5 ;
+INFO  04:17:12,116 - #3 {
+INFO  04:17:12,117 - #13 void
+INFO  04:17:12,117 - #14 main
+INFO  04:17:12,117 - #6 (
+INFO  04:17:12,117 - #7 )
+INFO  04:17:12,117 - #37 int
+INFO  04:17:12,117 - #37 bodovi
+INFO  04:17:12,117 - #5 ;
+INFO  04:17:12,117 - #37 bool
+INFO  04:17:12,117 - #37 bt
+INFO  04:17:12,117 - #5 ;
+INFO  04:17:12,117 - #3 {
+INFO  04:17:12,117 - #12 read
+INFO  04:17:12,117 - #6 (
+INFO  04:17:12,117 - #37 x
+INFO  04:17:12,117 - #7 )
+INFO  04:17:12,118 - #5 ;
+INFO  04:17:12,118 - #4 }
+INFO  04:17:12,118 - #4 }
+INFO  04:17:12,126 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  ConstDeclarations(
+    ConstDeclarations(
+      ConstDeclarations(
+        NoConstDecl(
+        ) [NoConstDecl]
+        ConstDecl(
+          Type(
+           int
+          ) [Type]
+          ConstListOne(
+            ConstDef(
+             nula
+              ConstNumber(
+               0
+              ) [ConstNumber]
+            ) [ConstDef]
+          ) [ConstListOne]
+        ) [ConstDecl]
+      ) [ConstDeclarations]
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        ConstListOne(
+          ConstDef(
+           jedan
+            ConstNumber(
+             1
+            ) [ConstNumber]
+          ) [ConstDef]
+        ) [ConstListOne]
+      ) [ConstDecl]
+    ) [ConstDeclarations]
+    ConstDecl(
+      Type(
+       int
+      ) [Type]
+      ConstListOne(
+        ConstDef(
+         pet
+          ConstNumber(
+           5
+          ) [ConstNumber]
+        ) [ConstDef]
+      ) [ConstListOne]
+    ) [ConstDecl]
+  ) [ConstDeclarations]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarListOne(
+        VarType(
+         a
+          VarNoArray(
+          ) [VarNoArray]
+        ) [VarType]
+      ) [VarListOne]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MainMethod(
+      ) [MainMethod]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarListOne(
+              VarType(
+               bodovi
+                VarNoArray(
+                ) [VarNoArray]
+              ) [VarType]
+            ) [VarListOne]
+          ) [VarDecl]
+        ) [VarDeclarations]
+        VarDecl(
+          Type(
+           bool
+          ) [Type]
+          VarListOne(
+            VarType(
+             bt
+              VarNoArray(
+              ) [VarNoArray]
+            ) [VarType]
+          ) [VarListOne]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        ReadStmt(
+          Designator(
+           x
+            DesignatorNoPart(
+            ) [DesignatorNoPart]
+          ) [Designator]
+        ) [ReadStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  04:17:12,126 - ===================================
+INFO  04:17:12,130 - Obradjuje se funkija main
+ERROR 04:17:12,130 - Greska na liniji 14 : ime x nije deklarisano!

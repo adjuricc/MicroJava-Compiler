@@ -1,0 +1,39 @@
+INFO  17:03:57,170 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  17:03:57,189 - #2 program
+INFO  17:03:57,189 - #34 test301
+INFO  17:03:57,189 - #32 const
+INFO  17:03:57,190 - #34 int
+INFO  17:03:57,190 - #34 nula
+INFO  17:03:57,190 - #29 =
+INFO  17:03:57,190 - #33 0
+INFO  17:03:57,190 - #5 ;
+INFO  17:03:57,192 - #32 const
+INFO  17:03:57,193 - #34 int
+INFO  17:03:57,193 - #34 jedan
+INFO  17:03:57,193 - #29 =
+INFO  17:03:57,193 - #33 1
+INFO  17:03:57,193 - #5 ;
+INFO  17:03:57,193 - #32 const
+INFO  17:03:57,193 - #34 int
+INFO  17:03:57,193 - #34 pet
+INFO  17:03:57,194 - #29 =
+INFO  17:03:57,194 - #33 5
+INFO  17:03:57,194 - #5 ;
+INFO  17:03:57,194 - #34 int
+INFO  17:03:57,195 - #34 niz
+INFO  17:03:57,195 - #13 [
+INFO  17:03:57,195 - #14 ]
+INFO  17:03:57,195 - #5 ;
+INFO  17:03:57,195 - #34 char
+INFO  17:03:57,195 - #34 nizch
+INFO  17:03:57,195 - #13 [
+INFO  17:03:57,195 - #14 ]
+INFO  17:03:57,196 - #5 ;
+INFO  17:03:57,196 - #34 int
+INFO  17:03:57,196 - #34 a
+INFO  17:03:57,196 - #5 ;
+INFO  17:03:57,196 - #3 {
+INFO  17:03:57,196 - #12 void
+ERROR 17:03:57,196 - 
+Sintaksna greska na liniji 15, value: void
+ERROR 17:03:57,196 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 15, value: void

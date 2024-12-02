@@ -1,0 +1,379 @@
+INFO  11:09:11,478 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  11:09:11,498 - #2 program
+INFO  11:09:11,498 - #34 test301
+INFO  11:09:11,498 - #32 const
+INFO  11:09:11,499 - #34 int
+INFO  11:09:11,499 - #34 nula
+INFO  11:09:11,499 - #29 =
+INFO  11:09:11,499 - #33 0
+INFO  11:09:11,499 - #5 ;
+INFO  11:09:11,500 - #32 const
+INFO  11:09:11,501 - #34 int
+INFO  11:09:11,501 - #34 jedan
+INFO  11:09:11,501 - #29 =
+INFO  11:09:11,501 - #33 1
+INFO  11:09:11,501 - #5 ;
+INFO  11:09:11,501 - #32 const
+INFO  11:09:11,501 - #34 int
+INFO  11:09:11,501 - #34 pet
+INFO  11:09:11,502 - #29 =
+INFO  11:09:11,502 - #33 5
+INFO  11:09:11,502 - #5 ;
+INFO  11:09:11,502 - #34 int
+INFO  11:09:11,502 - #34 niz
+INFO  11:09:11,502 - #13 [
+INFO  11:09:11,502 - #14 ]
+INFO  11:09:11,502 - #5 ;
+INFO  11:09:11,503 - #34 char
+INFO  11:09:11,503 - #34 nizch
+INFO  11:09:11,504 - #13 [
+INFO  11:09:11,504 - #14 ]
+INFO  11:09:11,504 - #5 ;
+INFO  11:09:11,504 - #34 int
+INFO  11:09:11,504 - #34 var
+INFO  11:09:11,504 - #13 [
+INFO  11:09:11,504 - #33 5
+INFO  11:09:11,504 - #14 ]
+INFO  11:09:11,504 - #5 ;
+INFO  11:09:11,504 - #34 int
+INFO  11:09:11,504 - #34 a
+INFO  11:09:11,504 - #5 ;
+INFO  11:09:11,504 - #3 {
+INFO  11:09:11,504 - #34 int
+INFO  11:09:11,505 - #34 main
+INFO  11:09:11,505 - #6 (
+INFO  11:09:11,505 - #7 )
+INFO  11:09:11,505 - #3 {
+INFO  11:09:11,505 - #34 bodovi
+INFO  11:09:11,505 - #29 =
+INFO  11:09:11,506 - #33 0
+INFO  11:09:11,506 - #5 ;
+INFO  11:09:11,507 - #34 bodovi
+INFO  11:09:11,507 - #19 ++
+INFO  11:09:11,507 - #5 ;
+INFO  11:09:11,507 - #34 bodovi
+INFO  11:09:11,507 - #29 =
+INFO  11:09:11,507 - #34 bodovi
+INFO  11:09:11,507 - #9 +
+INFO  11:09:11,507 - #34 jedan
+INFO  11:09:11,507 - #5 ;
+INFO  11:09:11,507 - #34 bodovi
+INFO  11:09:11,508 - #29 =
+INFO  11:09:11,508 - #34 bodovi
+INFO  11:09:11,508 - #16 *
+ERROR 11:09:11,508 - 
+Sintaksna greska na liniji 21, value: *
+INFO  11:09:11,508 - #34 pet
+INFO  11:09:11,508 - #5 ;
+INFO  11:09:11,508 - #34 bodovi
+INFO  11:09:11,508 - #20 --
+INFO  11:09:11,508 - #5 ;
+ERROR 11:09:11,508 - Izvrsen oporavak do ; u liniji 21
+INFO  11:09:11,512 - #11 print
+INFO  11:09:11,512 - #6 (
+INFO  11:09:11,512 - #34 bodovi
+INFO  11:09:11,512 - #7 )
+INFO  11:09:11,512 - #5 ;
+INFO  11:09:11,512 - #11 print
+INFO  11:09:11,512 - #6 (
+INFO  11:09:11,512 - #34 bodovi
+INFO  11:09:11,512 - #7 )
+INFO  11:09:11,512 - #5 ;
+INFO  11:09:11,512 - #34 a
+INFO  11:09:11,512 - #29 =
+INFO  11:09:11,513 - #33 1
+INFO  11:09:11,513 - #5 ;
+INFO  11:09:11,513 - #34 read
+INFO  11:09:11,513 - #6 (
+ERROR 11:09:11,513 - 
+Sintaksna greska na liniji 28, value: (
+INFO  11:09:11,513 - #34 bodovi
+INFO  11:09:11,513 - #7 )
+INFO  11:09:11,513 - #5 ;
+INFO  11:09:11,513 - #34 bodovi
+INFO  11:09:11,513 - #29 =
+INFO  11:09:11,514 - #15 -
+ERROR 11:09:11,514 - Izvrsen oporavak do ; u liniji 28
+ERROR 11:09:11,514 - 
+Sintaksna greska na liniji 29, value: -
+INFO  11:09:11,514 - #34 bodovi
+INFO  11:09:11,514 - #9 +
+INFO  11:09:11,514 - #6 (
+INFO  11:09:11,514 - #34 pet
+INFO  11:09:11,514 - #16 *
+INFO  11:09:11,514 - #34 a
+INFO  11:09:11,514 - #17 /
+INFO  11:09:11,514 - #33 2
+INFO  11:09:11,514 - #15 -
+INFO  11:09:11,514 - #34 jedan
+INFO  11:09:11,514 - #7 )
+INFO  11:09:11,514 - #16 *
+INFO  11:09:11,514 - #34 bodovi
+INFO  11:09:11,514 - #15 -
+INFO  11:09:11,514 - #6 (
+INFO  11:09:11,514 - #33 3
+INFO  11:09:11,514 - #18 %
+INFO  11:09:11,514 - #33 2
+INFO  11:09:11,514 - #9 +
+INFO  11:09:11,514 - #33 3
+INFO  11:09:11,514 - #16 *
+INFO  11:09:11,515 - #33 2
+INFO  11:09:11,515 - #15 -
+INFO  11:09:11,515 - #33 3
+INFO  11:09:11,515 - #7 )
+INFO  11:09:11,515 - #5 ;
+INFO  11:09:11,515 - #11 print
+INFO  11:09:11,515 - #6 (
+INFO  11:09:11,515 - #34 bodovi
+ERROR 11:09:11,515 - Izvrsen oporavak do ; u liniji 29
+INFO  11:09:11,515 - #7 )
+INFO  11:09:11,515 - #5 ;
+INFO  11:09:11,515 - #4 }
+INFO  11:09:11,515 - #4 }
+INFO  11:09:11,517 - Program(
+ test301
+  ConstDeclarations(
+    ConstDeclarations(
+      ConstDeclarations(
+        NoConstDecl(
+        ) [NoConstDecl]
+        ConstDecl(
+          Type(
+           int
+          ) [Type]
+          ConstListOne(
+            ConstDef(
+             nula
+              ConstNumber(
+               0
+              ) [ConstNumber]
+            ) [ConstDef]
+          ) [ConstListOne]
+        ) [ConstDecl]
+      ) [ConstDeclarations]
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        ConstListOne(
+          ConstDef(
+           jedan
+            ConstNumber(
+             1
+            ) [ConstNumber]
+          ) [ConstDef]
+        ) [ConstListOne]
+      ) [ConstDecl]
+    ) [ConstDeclarations]
+    ConstDecl(
+      Type(
+       int
+      ) [Type]
+      ConstListOne(
+        ConstDef(
+         pet
+          ConstNumber(
+           5
+          ) [ConstNumber]
+        ) [ConstDef]
+      ) [ConstListOne]
+    ) [ConstDecl]
+  ) [ConstDeclarations]
+  VarDeclarations(
+    VarDeclarations(
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarListOne(
+              VarTypeArray(
+               niz
+                ArrayNone(
+                ) [ArrayNone]
+              ) [VarTypeArray]
+            ) [VarListOne]
+          ) [VarDecl]
+        ) [VarDeclarations]
+        VarDecl(
+          Type(
+           char
+          ) [Type]
+          VarListOne(
+            VarTypeArray(
+             nizch
+              ArrayNone(
+              ) [ArrayNone]
+            ) [VarTypeArray]
+          ) [VarListOne]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+        VarListOne(
+          VarTypeArray(
+           var
+            ArrayNotNone(
+              ArrayOptNum(
+               5
+              ) [ArrayOptNum]
+            ) [ArrayNotNone]
+          ) [VarTypeArray]
+        ) [VarListOne]
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarListOne(
+        VarTypeIdent(
+         a
+        ) [VarTypeIdent]
+      ) [VarListOne]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                Statements(
+                  Statements(
+                    Statements(
+                      Statements(
+                        Statements(
+                          Statements(
+                            NoStmt(
+                            ) [NoStmt]
+                            Assignment(
+                              Designator(
+                               bodovi
+                              ) [Designator]
+                              TermExpr(
+                                Term(
+                                  Const(
+                                   0
+                                  ) [Const]
+                                ) [Term]
+                              ) [TermExpr]
+                            ) [Assignment]
+                          ) [Statements]
+                          PlusPlusStmt(
+                            Designator(
+                             bodovi
+                            ) [Designator]
+                          ) [PlusPlusStmt]
+                        ) [Statements]
+                        Assignment(
+                          Designator(
+                           bodovi
+                          ) [Designator]
+                          AddExpr(
+                            TermExpr(
+                              Term(
+                                Var(
+                                  Designator(
+                                   bodovi
+                                  ) [Designator]
+                                ) [Var]
+                              ) [Term]
+                            ) [TermExpr]
+                            AddopPlus(
+                            ) [AddopPlus]
+                            Term(
+                              Var(
+                                Designator(
+                                 jedan
+                                ) [Designator]
+                              ) [Var]
+                            ) [Term]
+                          ) [AddExpr]
+                        ) [Assignment]
+                      ) [Statements]
+                      ErrorStmt(
+                      ) [ErrorStmt]
+                    ) [Statements]
+                    MinusMinusStmt(
+                      Designator(
+                       bodovi
+                      ) [Designator]
+                    ) [MinusMinusStmt]
+                  ) [Statements]
+                  PrintStmt(
+                    TermExpr(
+                      Term(
+                        Var(
+                          Designator(
+                           bodovi
+                          ) [Designator]
+                        ) [Var]
+                      ) [Term]
+                    ) [TermExpr]
+                  ) [PrintStmt]
+                ) [Statements]
+                PrintStmt(
+                  TermExpr(
+                    Term(
+                      Var(
+                        Designator(
+                         bodovi
+                        ) [Designator]
+                      ) [Var]
+                    ) [Term]
+                  ) [TermExpr]
+                ) [PrintStmt]
+              ) [Statements]
+              Assignment(
+                Designator(
+                 a
+                ) [Designator]
+                TermExpr(
+                  Term(
+                    Const(
+                     1
+                    ) [Const]
+                  ) [Term]
+                ) [TermExpr]
+              ) [Assignment]
+            ) [Statements]
+            ErrorStmt(
+            ) [ErrorStmt]
+          ) [Statements]
+          ErrorStmt(
+          ) [ErrorStmt]
+        ) [Statements]
+        PrintStmt(
+          TermExpr(
+            Term(
+              Var(
+                Designator(
+                 bodovi
+                ) [Designator]
+              ) [Var]
+            ) [Term]
+          ) [TermExpr]
+        ) [PrintStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  11:09:11,517 - ===================================
+INFO  11:09:11,519 - Prepoznata naredba print!
+INFO  11:09:11,519 - Prepoznata naredba print!
+INFO  11:09:11,519 - Prepoznata naredba print!
+INFO  11:09:11,519 - Print count calls = 3
+INFO  11:09:11,519 - VarDecl count = 4

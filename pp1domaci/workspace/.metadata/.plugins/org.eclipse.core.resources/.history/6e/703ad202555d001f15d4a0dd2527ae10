@@ -1,0 +1,26 @@
+INFO  13:25:55,527 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  13:25:55,534 - #1 program
+INFO  13:25:55,534 - #10 p
+INFO  13:25:55,534 - #33 ;
+INFO  13:25:55,534 - #10 main
+INFO  13:25:55,534 - #34 (
+INFO  13:25:55,534 - #35 )
+INFO  13:25:55,534 - #36 {
+INFO  13:25:55,534 - #10 int
+INFO  13:25:55,534 - #10 x
+INFO  13:25:55,534 - #32 ,
+INFO  13:25:55,534 - #10 y
+INFO  13:25:55,534 - #33 ;
+INFO  13:25:55,534 - #10 x
+INFO  13:25:55,534 - #28 =
+INFO  13:25:55,534 - #11 5
+INFO  13:25:55,534 - #33 ;
+INFO  13:25:55,534 - #10 y
+INFO  13:25:55,535 - #28 =
+INFO  13:25:55,535 - #13 true
+INFO  13:25:55,535 - #33 ;
+INFO  13:25:55,535 - #10 y
+INFO  13:25:55,535 - #28 =
+INFO  13:25:55,535 - #10 b
+INFO  13:25:55,535 - #33 ;
+INFO  13:25:55,535 - #37 }

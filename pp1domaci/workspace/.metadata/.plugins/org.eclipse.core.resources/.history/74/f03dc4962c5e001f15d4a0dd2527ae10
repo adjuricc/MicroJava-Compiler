@@ -1,0 +1,156 @@
+
+
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left).append(", value: ").append(((Symbol)info).value);
+        log.error(msg.toString());
+    }
+
+
+:}
+
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+terminal PROG, LBRACE, RBRACE, SEMI, LPAREN, RPAREN, RETURN, PLUS, COMMA, PRINT, VOID, LSQBRACE, RSQBRACE;
+terminal MINUS, MUL, DIV, MOD, PLUSPLUS, MINUSMINUS;
+terminal EQUAL, NEQUAL, GREATER, GEQUAL, LESS, LEQUAL, AND, OR;
+terminal ASSIGN, COLON, DOT, CONST;
+terminal Integer INT;
+terminal String IDENT;
+terminal Boolean BOOL;
+terminal String CHAR;
+
+nonterminal Program, Type;
+nonterminal VarDeclList, VarDecl, VarType, VarList;
+nonterminal ConstDeclList, ConstDecl, ConstDef, ConstList, ConstVal;
+nonterminal MethodDeclList, MethodDecl;
+nonterminal StatementList, Statement;
+nonterminal Designator, Expr, Term, Addop, Factor, Relop, Mulop, Assignop;
+
+Program ::= (Program) PROG IDENT ConstDeclList VarDeclList MethodDeclList;
+
+ConstDeclList ::= (ConstDeclarations) ConstDeclList ConstDecl
+			|
+			(NoConstDecl) /* epsilon */
+			;
+
+ConstDecl ::= (ConstDecl) CONST Type ConstList SEMI;
+
+ConstList ::= (ConstListMany) ConstList COMMA ConstDef
+			| (ConstListOne) ConstDef;
+
+ConstDef ::= (ConstDef) IDENT ASSIGN ConstVal;
+			
+ConstVal ::= (ConstNumber) INT
+			| (ConstChar) CHAR
+			| (ConstBool) BOOL;
+			
+VarDeclList ::= (VarDeclarations) VarDeclList VarDecl
+			|
+			(NoVarDecl) /* epsilon */
+			;
+
+VarDecl ::= (VarDecl) Type VarList SEMI;
+
+VarList ::= (VarListMany) VarList COMMA VarType
+			| (VarListOne) VarType;
+			
+VarType ::= (VarTypeIdent) IDENT
+		| (VarTypeArray) IDENT LSQBRACE RSQBRACE
+		;
+
+Type ::= (Type) IDENT;
+
+MethodDeclList ::= (MethodDeclarations) MethodDeclList MethodDecl
+				|
+				(NoMethodDecl) /* epsilon */
+				;
+				
+MethodDecl ::= (MethodDecl) Type:retType IDENT:methName LPAREN RPAREN LBRACE StatementList RBRACE;
+
+StatementList ::= (Statements) StatementList Statement
+				|
+				(NoStmt) /* epsilon */
+				;
+
+Statement ::= (Assignment) Designator:dest ASSIGN Expr:e SEMI
+		   |
+		   (PlusPlusStmt) Designator PLUSPLUS SEMI
+		   |
+		   (MinusMinusStmt) Designator MINUSMINUS SEMI
+		   |
+		   (ErrorStmt) error SEMI:l
+		   {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null);  :}
+		   |
+		   (PrintStmt) PRINT LPAREN Expr RPAREN SEMI
+		   |
+		   (ReturnExpr) RETURN Expr:t SEMI
+		   |
+		   (ReturnNoExpr) RETURN SEMI
+		   ;
+			
+Expr ::= (AddExpr) Expr:te Addop Term:t
+	 |
+	 (TermExpr) Term:t
+	 ;
+
+Term ::= (Term) Factor:t;
+
+Factor ::= (Const) INT
+		|
+		(Var) Designator:d
+		;
+				
+Designator ::= (Designator) IDENT:name;
+
+Assignop ::= (Assignop) ASSIGN;
+
+Relop ::= (RelopEqual) EQUAL
+		| (RelopNEqual) NEQUAL
+		| (RelopGreater) GREATER
+		| (RelopGEqual) GEQUAL
+		| (RelopLess) LESS
+		| (RelopLEqual) LEQUAL
+		; 
+
+Addop ::= (AddopPlus) PLUS
+		| (AddopMinus) MINUS
+		;
+		
+Mulop ::= (MulopMul) MUL
+		| (MulopDiv) DIV
+		| (MulopMod) MOD
+		;

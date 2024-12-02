@@ -1,0 +1,5 @@
+program p
+
+void main(){
+	bool ch = true_const;
+}

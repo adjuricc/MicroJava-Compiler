@@ -1,0 +1,71 @@
+program EqualDeclaration
+
+
+    const int nula = 10;
+    int niz1[];
+
+    int a;
+
+    int niz2[], niz4[];
+    char niz3[];
+    char niz5[];
+{
+    void main()
+    {
+        a = 5;
+        
+        niz2 = new int[6];
+        niz2[0] = a * nula; // 50
+        niz2[1] = niz2[0] - niz2[0] % (a + 2); // 50 - 1 = 49
+        niz2[2] = 2;
+        niz2[2]++;
+        
+        niz4 = niz2;
+        niz4[3] = 15;
+        read(niz4[4]);
+        read(niz2[5]);
+        
+    
+        print(niz2[1]); // 49
+        print(niz2[2]); // 3
+        print(niz2[3]); // 15
+        print(niz2[4]); // 6 input
+        print(niz2[5]); // 7 input
+        
+        print(eol);
+        
+        print(niz4[1]);
+        print(niz4[2]);
+        print(niz4[3]);
+        print(niz4[4]);
+        print(niz4[5]);
+        
+        print(eol);
+        
+        print(niz4[2]);
+        print(eol);
+        
+        niz3 = new char[6];
+        
+        print(niz4[2]);
+        print(eol);
+        
+        niz3[0] = 'A';
+        niz3[1] = 'n';
+        niz3[2] = niz3[0];
+        
+        print(niz2[2]);
+        print(eol);
+    
+        print(niz3[1]);
+        print(niz3[2]);
+        print(eol);
+        
+        niz5 = niz3;
+        
+        print(niz3[2]);
+        print('=');
+        print(niz5[2]);
+        
+    }
+}

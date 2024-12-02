@@ -1,0 +1,86 @@
+INFO  02:01:54,445 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  02:01:54,459 - #2 program
+INFO  02:01:54,459 - #37 test301
+INFO  02:01:54,459 - #3 {
+INFO  02:01:54,460 - #13 void
+INFO  02:01:54,461 - #14 main
+INFO  02:01:54,461 - #6 (
+INFO  02:01:54,461 - #7 )
+INFO  02:01:54,461 - #3 {
+INFO  02:01:54,461 - #11 print
+INFO  02:01:54,461 - #6 (
+INFO  02:01:54,461 - #36 1
+INFO  02:01:54,461 - #7 )
+INFO  02:01:54,462 - #5 ;
+INFO  02:01:54,462 - #11 print
+INFO  02:01:54,462 - #6 (
+INFO  02:01:54,462 - #36 2
+INFO  02:01:54,462 - #7 )
+INFO  02:01:54,462 - #5 ;
+INFO  02:01:54,462 - #11 print
+INFO  02:01:54,462 - #6 (
+INFO  02:01:54,462 - #36 3
+INFO  02:01:54,462 - #7 )
+INFO  02:01:54,462 - #5 ;
+INFO  02:01:54,462 - #4 }
+INFO  02:01:54,462 - #4 }
+INFO  02:01:54,467 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoConstDecl(
+  ) [NoConstDecl]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MainMethod(
+      ) [MainMethod]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          Statements(
+            NoStmt(
+            ) [NoStmt]
+            PrintStmt(
+              TermExpr(
+                CommonTerm(
+                  Const(
+                   1
+                  ) [Const]
+                ) [CommonTerm]
+              ) [TermExpr]
+            ) [PrintStmt]
+          ) [Statements]
+          PrintStmt(
+            TermExpr(
+              CommonTerm(
+                Const(
+                 2
+                ) [Const]
+              ) [CommonTerm]
+            ) [TermExpr]
+          ) [PrintStmt]
+        ) [Statements]
+        PrintStmt(
+          TermExpr(
+            CommonTerm(
+              Const(
+               3
+              ) [Const]
+            ) [CommonTerm]
+          ) [TermExpr]
+        ) [PrintStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  02:01:54,467 - ===================================
+INFO  02:01:54,469 - Obradjuje se funkija main
+INFO  02:01:54,469 - Print count calls = 0
+INFO  02:01:54,469 - VarDecl count = 0
+INFO  02:01:54,469 - ===================================
+INFO  02:01:54,473 - Parsiranje uspesno zavrseno!

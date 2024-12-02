@@ -1,0 +1,197 @@
+package rs.ac.bg.etf.pp1;
+
+import org.apache.log4j.Logger;
+
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.etf.pp1.symboltable.*;
+import rs.etf.pp1.symboltable.concepts.*;
+
+public class SemanticPass extends VisitorAdaptor {
+	int printCallCount = 0;
+	int varDeclCnt = 0;
+	boolean errorDetected = false;
+	Obj currentMethod = null;
+	
+	Logger log = Logger.getLogger(getClass());
+	
+
+	public boolean passed(){
+        return !errorDetected;
+    }
+	
+	public void report_info(String message, SyntaxNode info) {
+        StringBuilder msg = new StringBuilder(message);
+        int line = (info == null) ? 0 : info.getLine();
+        if (line != 0)
+            msg.append(" on line ").append(line);
+        log.info(msg.toString());
+    }
+
+    public void report_error(String message, SyntaxNode info) {
+        errorDetected = true;
+        StringBuilder msg = new StringBuilder(message);
+        int line = (info == null) ? 0 : info.getLine();
+        if (line != 0)
+            msg.append(" on line").append(line);
+        log.error(msg.toString());
+    }
+
+	
+	public void visit(PrintStmt PrintStmt) { 
+		printCallCount++;
+		log.info("Prepoznata naredba print!");
+	}
+	
+	public void visit(VarDecl vardecl) { 
+		log.info("vardecl");
+		varDeclCnt++;
+		VarList vardecl_list = vardecl.getVarList();
+		
+		while(vardecl_list instanceof VarListMany) {
+			VarListMany varlist_many = (VarListMany) vardecl_list;
+			
+			VarType var_type = varlist_many.getVarType();
+			VarArrayOpt var_array_opt = var_type.getVarArrayOpt();
+			
+			log.info(vardecl.getType());
+			
+			if(var_array_opt instanceof VarNoArray) {
+				
+				Obj var_node = Tab.insert(Obj.Var, var_type.getName(), vardecl.getType().struct);
+			}
+			else {
+				Struct s = new Struct(Struct.Array, vardecl.getType().struct);
+				Obj var_node = Tab.insert(Obj.Var, var_type.getName(), s);
+			}
+			
+			vardecl_list = varlist_many.getVarList();
+		}
+		
+		if(vardecl_list instanceof VarListOne){
+			VarType var_type = ((VarListOne) vardecl_list).getVarType();
+			VarArrayOpt var_array_opt = var_type.getVarArrayOpt();
+			
+			if(var_array_opt instanceof VarNoArray) {
+				Obj var_node = Tab.insert(Obj.Var, var_type.getName(), vardecl.getType().struct);
+			}
+			else {
+				Struct s = new Struct(Struct.Array, vardecl.getType().struct);
+				Obj var_node = Tab.insert(Obj.Var, var_type.getName(), s);
+			}
+		}
+			
+	}
+	
+	public void visit(Type type) {
+		Obj type_node = Tab.find(type.getI1());
+		
+		if(type_node == Tab.noObj) {
+			report_error("Nije pronadjen tip " + type.getI1() + " u tabeli simbola! ", null);
+			type.struct = Tab.noType;
+		}
+		else {
+			if(Obj.Type == type_node.getKind()) {
+				type.struct = type_node.getType();
+			}
+			else {
+				report_error("Greska: Ime " + type.getI1() + " ne predstavlja tip!", type);
+				type.struct = Tab.noType;
+			}
+		}
+	}
+	
+	public void visit(ConstDecl constdecl) {
+		log.info("constdecl");
+		
+		ConstList const_list = constdecl.getConstList();
+		
+		while(const_list instanceof ConstListMany) {
+			ConstListMany const_list_many = (ConstListMany) const_list;
+			
+			
+			
+			const_list = constdecl.getConstList();
+		}
+		
+//		if(vardecl_list instanceof VarListOne){
+//			VarType var_type = ((VarListOne) vardecl_list).getVarType();
+//			VarArrayOpt var_array_opt = var_type.getVarArrayOpt();
+//			
+//			if(var_array_opt instanceof VarNoArray) {
+//				Obj var_node = Tab.insert(Obj.Var, var_type.getName(), vardecl.getType().struct);
+//			}
+//			else {
+//				Struct s = new Struct(Struct.Array, vardecl.getType().struct);
+//				Obj var_node = Tab.insert(Obj.Var, var_type.getName(), s);
+//			}
+//		}
+	}
+	
+	public void visit(ProgName progName) {
+		progName.obj = Tab.insert(Obj.Prog, progName.getProgName(), Tab.noType);
+		Tab.openScope();
+	}
+	
+	public void visit(Program program) {
+		Tab.chainLocalSymbols(program.getProgName().obj);
+		Tab.closeScope();
+	}
+	
+	public void visit(MainMethod mainmethod) {
+		currentMethod = Tab.insert(Obj.Meth, "main", Tab.noType);
+		Tab.openScope();
+		
+		report_info("Obradjuje se funkija main", mainmethod);
+	}
+	
+	public void visit(MethodDecl methoddecl) {
+		Tab.chainLocalSymbols(currentMethod);
+		Tab.closeScope();
+		
+		currentMethod = null;
+	}
+	
+	public void visit(Designator designator) {
+		Obj obj = MyTab.find(designator.getName());
+		
+		if(obj == MyTab.noObj) {
+			report_error("Greska na liniji " + designator.getLine() + " : ime " + designator.getName() + " nije deklarisano!", null);
+		}
+		
+		designator.obj = obj;
+	}
+	
+	private boolean compatibility(Struct dst, Struct src) {
+		log.info(dst.getKind());
+		log.info(src.getKind());
+		if(dst.getKind() == Struct.Array && src.getKind() == Struct.Array) {
+			if(dst.getElemType() == src.getElemType())
+				return true;
+			return false;
+		}
+		return dst == src;
+	}
+	
+	public void visit(Assignment assignment) {
+		Struct dest_type = assignment.getDesignator().obj.getType();
+		Struct expr_type = assignment.getExpr().struct;
+		
+		log.info(dest_type);
+		log.info(assignment.getExpr());
+		
+		if(!compatibility(dest_type, expr_type)) {
+			report_error("Greska na liniji " + assignment.getLine() + ": Tipovi moraju biti isti! ", null);	
+		}
+	}
+	
+	public void visit(TermExpr termexpr) {
+		log.info("??");
+		termexpr.struct = termexpr.getTerm().struct;
+	}
+	
+	public void visit(CommonTerm commonterm) {
+		log.info("halo??");
+		commonterm.struct = commonterm.getFactor().struct;
+	}
+	
+}

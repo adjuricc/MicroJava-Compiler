@@ -1,0 +1,246 @@
+INFO  01:10:44,015 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  01:10:44,050 - #2 program
+INFO  01:10:44,050 - #37 test301
+INFO  01:10:44,050 - #35 const
+INFO  01:10:44,051 - #37 int
+INFO  01:10:44,052 - #37 nula
+INFO  01:10:44,052 - #32 =
+INFO  01:10:44,052 - #36 0
+INFO  01:10:44,052 - #5 ;
+INFO  01:10:44,054 - #35 const
+INFO  01:10:44,054 - #37 int
+INFO  01:10:44,054 - #37 jedan
+INFO  01:10:44,054 - #32 =
+INFO  01:10:44,056 - #36 1
+INFO  01:10:44,056 - #5 ;
+INFO  01:10:44,056 - #35 const
+INFO  01:10:44,056 - #37 int
+INFO  01:10:44,056 - #37 pet
+INFO  01:10:44,056 - #32 =
+INFO  01:10:44,056 - #36 5
+INFO  01:10:44,056 - #5 ;
+INFO  01:10:44,056 - #37 int
+INFO  01:10:44,057 - #37 niz
+INFO  01:10:44,057 - #15 [
+INFO  01:10:44,057 - #16 ]
+INFO  01:10:44,057 - #5 ;
+INFO  01:10:44,058 - #37 char
+INFO  01:10:44,060 - #37 nizch
+INFO  01:10:44,060 - #15 [
+INFO  01:10:44,060 - #16 ]
+INFO  01:10:44,060 - #5 ;
+INFO  01:10:44,060 - #37 int
+INFO  01:10:44,060 - #37 mat
+INFO  01:10:44,060 - #15 [
+INFO  01:10:44,060 - #16 ]
+INFO  01:10:44,060 - #15 [
+INFO  01:10:44,060 - #16 ]
+INFO  01:10:44,060 - #5 ;
+INFO  01:10:44,060 - #37 int
+INFO  01:10:44,062 - #37 a
+INFO  01:10:44,062 - #5 ;
+INFO  01:10:44,062 - #3 {
+INFO  01:10:44,063 - #13 void
+INFO  01:10:44,063 - #14 main
+INFO  01:10:44,064 - #6 (
+INFO  01:10:44,064 - #7 )
+INFO  01:10:44,064 - #37 int
+INFO  01:10:44,064 - #37 bodovi
+INFO  01:10:44,064 - #5 ;
+INFO  01:10:44,064 - #37 bool
+INFO  01:10:44,064 - #37 bt
+INFO  01:10:44,064 - #5 ;
+INFO  01:10:44,064 - #3 {
+INFO  01:10:44,064 - #12 read
+INFO  01:10:44,064 - #6 (
+INFO  01:10:44,065 - #37 bt
+INFO  01:10:44,065 - #7 )
+INFO  01:10:44,065 - #5 ;
+INFO  01:10:44,065 - #11 print
+INFO  01:10:44,067 - #6 (
+INFO  01:10:44,067 - #37 bt
+INFO  01:10:44,067 - #7 )
+INFO  01:10:44,067 - #5 ;
+INFO  01:10:44,067 - #4 }
+INFO  01:10:44,067 - #4 }
+INFO  01:10:44,081 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  ConstDeclarations(
+    ConstDeclarations(
+      ConstDeclarations(
+        NoConstDecl(
+        ) [NoConstDecl]
+        ConstDecl(
+          Type(
+           int
+          ) [Type]
+          ConstListOne(
+            ConstDef(
+             nula
+              ConstNumber(
+               0
+              ) [ConstNumber]
+            ) [ConstDef]
+          ) [ConstListOne]
+        ) [ConstDecl]
+      ) [ConstDeclarations]
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        ConstListOne(
+          ConstDef(
+           jedan
+            ConstNumber(
+             1
+            ) [ConstNumber]
+          ) [ConstDef]
+        ) [ConstListOne]
+      ) [ConstDecl]
+    ) [ConstDeclarations]
+    ConstDecl(
+      Type(
+       int
+      ) [Type]
+      ConstListOne(
+        ConstDef(
+         pet
+          ConstNumber(
+           5
+          ) [ConstNumber]
+        ) [ConstDef]
+      ) [ConstListOne]
+    ) [ConstDecl]
+  ) [ConstDeclarations]
+  VarDeclarations(
+    VarDeclarations(
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarListOne(
+              VarType(
+               niz
+                VarArray(
+                ) [VarArray]
+              ) [VarType]
+            ) [VarListOne]
+          ) [VarDecl]
+        ) [VarDeclarations]
+        VarDecl(
+          Type(
+           char
+          ) [Type]
+          VarListOne(
+            VarType(
+             nizch
+              VarArray(
+              ) [VarArray]
+            ) [VarType]
+          ) [VarListOne]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+        VarListOne(
+          VarType(
+           mat
+            VarMatrix(
+            ) [VarMatrix]
+          ) [VarType]
+        ) [VarListOne]
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarListOne(
+        VarType(
+         a
+          VarNoArray(
+          ) [VarNoArray]
+        ) [VarType]
+      ) [VarListOne]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MainMethod(
+      ) [MainMethod]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarListOne(
+              VarType(
+               bodovi
+                VarNoArray(
+                ) [VarNoArray]
+              ) [VarType]
+            ) [VarListOne]
+          ) [VarDecl]
+        ) [VarDeclarations]
+        VarDecl(
+          Type(
+           bool
+          ) [Type]
+          VarListOne(
+            VarType(
+             bt
+              VarNoArray(
+              ) [VarNoArray]
+            ) [VarType]
+          ) [VarListOne]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          ReadStmt(
+            Designator(
+             bt
+              DesignatorNoPart(
+              ) [DesignatorNoPart]
+            ) [Designator]
+          ) [ReadStmt]
+        ) [Statements]
+        PrintStmt(
+          TermExpr(
+            CommonTerm(
+              Var(
+                Designator(
+                 bt
+                  DesignatorNoPart(
+                  ) [DesignatorNoPart]
+                ) [Designator]
+              ) [Var]
+            ) [CommonTerm]
+          ) [TermExpr]
+        ) [PrintStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  01:10:44,081 - ===================================
+INFO  01:10:44,085 - Obradjuje se funkija main
+INFO  01:10:44,089 - 
+INFO  01:10:44,089 - Print count calls = 0
+INFO  01:10:44,089 - VarDecl count = 6
+INFO  01:10:44,089 - ===================================
+INFO  01:10:44,099 - Parsiranje uspesno zavrseno!

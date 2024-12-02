@@ -1,0 +1,73 @@
+INFO  15:14:16,088 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  15:14:16,099 - #2 program
+INFO  15:14:16,099 - #34 MJProgram
+INFO  15:14:16,099 - #34 int
+INFO  15:14:16,100 - #34 x
+INFO  15:14:16,101 - #10 ,
+INFO  15:14:16,101 - #34 y
+INFO  15:14:16,101 - #5 ;
+INFO  15:14:16,102 - #3 {
+INFO  15:14:16,102 - #34 int
+INFO  15:14:16,103 - #34 main
+INFO  15:14:16,103 - #6 (
+INFO  15:14:16,103 - #7 )
+INFO  15:14:16,103 - #3 {
+INFO  15:14:16,103 - #34 y
+INFO  15:14:16,104 - #29 =
+INFO  15:14:16,104 - #33 3
+INFO  15:14:16,104 - #5 ;
+INFO  15:14:16,105 - #4 }
+INFO  15:14:16,105 - #4 }
+INFO  15:14:16,107 - Program(
+ MJProgram
+  NoConstDecl(
+  ) [NoConstDecl]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarListMany(
+        VarListOne(
+          VarTypeIdent(
+           x
+          ) [VarTypeIdent]
+        ) [VarListOne]
+        VarTypeIdent(
+         y
+        ) [VarTypeIdent]
+      ) [VarListMany]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        Assignment(
+          Designator(
+           y
+          ) [Designator]
+          TermExpr(
+            Term(
+              Const(
+               3
+              ) [Const]
+            ) [Term]
+          ) [TermExpr]
+        ) [Assignment]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  15:14:16,107 - ===================================
+INFO  15:14:16,108 - Print count calls = 0
+INFO  15:14:16,108 - VarDecl count = 1

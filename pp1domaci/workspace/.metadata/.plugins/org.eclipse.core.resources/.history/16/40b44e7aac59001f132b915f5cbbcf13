@@ -1,0 +1,70 @@
+package rs.ac.bg.etf.pp1;
+
+public class sym {
+	// keywords
+	public static final int PROG = 1;
+	public static final int PRINT = 2;
+	public static final int RETURN = 3;
+	public static final int VOID = 4;
+	public static final int INT = 5;
+	public static final int CHAR = 6;
+	public static final int BOOL = 7;
+	public static final int IF = 8;
+	public static final int ELSE = 9;
+	public static final int FOR = 10;
+	public static final int CLASS = 11;
+	public static final int NEW = 12;
+	public static final int THIS = 13;
+	public static final int NAMESPACE = 46;
+    public static final int CONST = 47;
+    public static final int STATIC = 48;
+	
+	// identifiers
+	public static final int IDENT = 14;
+	
+	// constants
+	public static final int INT_CONST = 15;
+    public static final int CHAR_CONST = 16;
+    public static final int BOOL_CONST = 17;
+	
+	// operators
+	public static final int PLUS = 18;
+	public static final int MINUS = 19;
+	public static final int MUL = 20;
+	public static final int DIV = 21;
+	public static final int MOD = 22;
+	public static final int EQUAL = 23;
+	public static final int NEQUAL = 24;
+	public static final int LESS = 25;
+	public static final int LEQUAL = 26;
+	public static final int GREATER = 27;
+	public static final int GEQUAL = 28;
+	public static final int AND = 29;
+	public static final int OR = 30;
+	public static final int NOT = 31;
+	public static final int ASSIGN = 32;
+	public static final int PLUSPLUS = 47;
+	public static final int MINUSMINUS = 48;
+	
+	// seperators
+	public static final int COMMA = 33;
+    public static final int SEMI = 34;
+    public static final int LPAREN = 35;
+    public static final int RPAREN = 36;
+    public static final int LBRACE = 37;
+    public static final int RBRACE = 38;
+    public static final int LBRACKET = 39;
+    public static final int RBRACKET = 40;
+    
+    // predefined methods
+    public static final int ORD = 41;
+    public static final int CHR = 42;
+    public static final int LEN = 43;
+    
+    public static final int DOUBLESEMI = 46;
+	
+	public static final int EOF = 44; // token for the end of reading
+	
+	
+	public static final int UNKNOWN = 45;
+}

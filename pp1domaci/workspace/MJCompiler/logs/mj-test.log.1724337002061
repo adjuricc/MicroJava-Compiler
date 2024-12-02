@@ -1,0 +1,286 @@
+INFO  16:29:27,235 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  16:29:27,250 - #2 program
+INFO  16:29:27,250 - #37 test301
+INFO  16:29:27,250 - #35 const
+INFO  16:29:27,251 - #37 int
+INFO  16:29:27,251 - #37 nula
+INFO  16:29:27,251 - #32 =
+INFO  16:29:27,251 - #36 0
+INFO  16:29:27,251 - #5 ;
+INFO  16:29:27,252 - #35 const
+INFO  16:29:27,252 - #37 int
+INFO  16:29:27,252 - #37 jedan
+INFO  16:29:27,252 - #32 =
+INFO  16:29:27,252 - #36 1
+INFO  16:29:27,252 - #5 ;
+INFO  16:29:27,253 - #35 const
+INFO  16:29:27,253 - #37 int
+INFO  16:29:27,253 - #37 pet
+INFO  16:29:27,253 - #32 =
+INFO  16:29:27,253 - #36 5
+INFO  16:29:27,253 - #5 ;
+INFO  16:29:27,253 - #35 const
+INFO  16:29:27,253 - #37 char
+INFO  16:29:27,253 - #37 x
+INFO  16:29:27,253 - #32 =
+INFO  16:29:27,253 - #39 'a'
+INFO  16:29:27,253 - #5 ;
+INFO  16:29:27,253 - #35 const
+INFO  16:29:27,253 - #37 bool
+INFO  16:29:27,253 - #37 y
+INFO  16:29:27,253 - #32 =
+INFO  16:29:27,253 - #38 true
+INFO  16:29:27,253 - #5 ;
+INFO  16:29:27,254 - #37 int
+INFO  16:29:27,254 - #37 niz
+INFO  16:29:27,254 - #15 [
+INFO  16:29:27,254 - #16 ]
+INFO  16:29:27,254 - #10 ,
+INFO  16:29:27,254 - #37 niz2
+INFO  16:29:27,256 - #15 [
+INFO  16:29:27,256 - #16 ]
+INFO  16:29:27,256 - #5 ;
+INFO  16:29:27,256 - #37 char
+INFO  16:29:27,256 - #37 nizch
+INFO  16:29:27,256 - #15 [
+INFO  16:29:27,256 - #16 ]
+INFO  16:29:27,256 - #5 ;
+INFO  16:29:27,256 - #3 {
+INFO  16:29:27,256 - #13 void
+INFO  16:29:27,256 - #14 main
+INFO  16:29:27,256 - #6 (
+INFO  16:29:27,257 - #7 )
+INFO  16:29:27,257 - #37 int
+INFO  16:29:27,257 - #37 bodovi
+INFO  16:29:27,257 - #10 ,
+INFO  16:29:27,257 - #37 a
+INFO  16:29:27,257 - #10 ,
+INFO  16:29:27,257 - #37 b
+INFO  16:29:27,257 - #5 ;
+INFO  16:29:27,257 - #37 bool
+INFO  16:29:27,257 - #37 bt
+INFO  16:29:27,257 - #5 ;
+INFO  16:29:27,257 - #3 {
+INFO  16:29:27,257 - #37 bodovi
+INFO  16:29:27,258 - #32 =
+INFO  16:29:27,258 - #37 niz
+INFO  16:29:27,258 - #15 [
+INFO  16:29:27,258 - #36 2
+INFO  16:29:27,258 - #16 ]
+INFO  16:29:27,259 - #9 +
+INFO  16:29:27,261 - #36 3
+INFO  16:29:27,261 - #5 ;
+INFO  16:29:27,261 - #4 }
+INFO  16:29:27,262 - #4 }
+INFO  16:29:27,267 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  ConstDeclarations(
+    ConstDeclarations(
+      ConstDeclarations(
+        ConstDeclarations(
+          ConstDeclarations(
+            NoConstDecl(
+            ) [NoConstDecl]
+            ConstDecl(
+              Type(
+               int
+              ) [Type]
+              ConstListOne(
+                ConstDef(
+                 nula
+                  ConstNumber(
+                   0
+                  ) [ConstNumber]
+                ) [ConstDef]
+              ) [ConstListOne]
+            ) [ConstDecl]
+          ) [ConstDeclarations]
+          ConstDecl(
+            Type(
+             int
+            ) [Type]
+            ConstListOne(
+              ConstDef(
+               jedan
+                ConstNumber(
+                 1
+                ) [ConstNumber]
+              ) [ConstDef]
+            ) [ConstListOne]
+          ) [ConstDecl]
+        ) [ConstDeclarations]
+        ConstDecl(
+          Type(
+           int
+          ) [Type]
+          ConstListOne(
+            ConstDef(
+             pet
+              ConstNumber(
+               5
+              ) [ConstNumber]
+            ) [ConstDef]
+          ) [ConstListOne]
+        ) [ConstDecl]
+      ) [ConstDeclarations]
+      ConstDecl(
+        Type(
+         char
+        ) [Type]
+        ConstListOne(
+          ConstDef(
+           x
+            ConstChar(
+             'a'
+            ) [ConstChar]
+          ) [ConstDef]
+        ) [ConstListOne]
+      ) [ConstDecl]
+    ) [ConstDeclarations]
+    ConstDecl(
+      Type(
+       bool
+      ) [Type]
+      ConstListOne(
+        ConstDef(
+         y
+          ConstBool(
+           true
+          ) [ConstBool]
+        ) [ConstDef]
+      ) [ConstListOne]
+    ) [ConstDecl]
+  ) [ConstDeclarations]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+        VarListMany(
+          VarListOne(
+            VarType(
+             niz
+              VarArray(
+              ) [VarArray]
+            ) [VarType]
+          ) [VarListOne]
+          VarType(
+           niz2
+            VarArray(
+            ) [VarArray]
+          ) [VarType]
+        ) [VarListMany]
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       char
+      ) [Type]
+      VarListOne(
+        VarType(
+         nizch
+          VarArray(
+          ) [VarArray]
+        ) [VarType]
+      ) [VarListOne]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MainMethod(
+      ) [MainMethod]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarListMany(
+              VarListMany(
+                VarListOne(
+                  VarType(
+                   bodovi
+                    VarNoArray(
+                    ) [VarNoArray]
+                  ) [VarType]
+                ) [VarListOne]
+                VarType(
+                 a
+                  VarNoArray(
+                  ) [VarNoArray]
+                ) [VarType]
+              ) [VarListMany]
+              VarType(
+               b
+                VarNoArray(
+                ) [VarNoArray]
+              ) [VarType]
+            ) [VarListMany]
+          ) [VarDecl]
+        ) [VarDeclarations]
+        VarDecl(
+          Type(
+           bool
+          ) [Type]
+          VarListOne(
+            VarType(
+             bt
+              VarNoArray(
+              ) [VarNoArray]
+            ) [VarType]
+          ) [VarListOne]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        Assignment(
+          Designator(
+           bodovi
+            DesignatorNoPart(
+            ) [DesignatorNoPart]
+          ) [Designator]
+          AddExpr(
+            TermExpr(
+              CommonTerm(
+                Var(
+                  Designator(
+                   niz
+                    DesignatorArray(
+                      TermExpr(
+                        CommonTerm(
+                          Const(
+                           2
+                          ) [Const]
+                        ) [CommonTerm]
+                      ) [TermExpr]
+                    ) [DesignatorArray]
+                  ) [Designator]
+                ) [Var]
+              ) [CommonTerm]
+            ) [TermExpr]
+            AddopPlus(
+            ) [AddopPlus]
+            CommonTerm(
+              Const(
+               3
+              ) [Const]
+            ) [CommonTerm]
+          ) [AddExpr]
+        ) [Assignment]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  16:29:27,267 - ===================================
+INFO  16:29:27,269 - Obradjuje se funkija main
+INFO  16:29:27,269 - bodovi

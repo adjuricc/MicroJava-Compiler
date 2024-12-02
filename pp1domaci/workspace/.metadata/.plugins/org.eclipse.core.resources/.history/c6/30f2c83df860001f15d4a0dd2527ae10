@@ -1,0 +1,20 @@
+// Test301
+
+program test301
+	const int nula = 0;
+	const int jedan = 1;
+	const int pet = 5;
+	
+	int a;
+	char ch;
+{
+    void main() 
+    	int bodovi;
+    	bool bt;
+    {	
+    	read(a);
+    	read(ch);
+    	print(a);
+    	print(ch);
+    }
+}

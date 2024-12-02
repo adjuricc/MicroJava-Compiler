@@ -1,0 +1,65 @@
+package rs.ac.bg.etf.pp1;
+
+public class sym_old {
+	// keywords
+	public static final int PROG = 1;
+	public static final int PRINT = 2;
+	public static final int RETURN = 3;
+	public static final int VOID = 4;
+	public static final int INT = 5;
+	public static final int CHAR = 6;
+	public static final int BOOL = 7;
+	public static final int NAMESPACE = 8;
+    public static final int CONST = 9;
+	
+	// identifiers
+	public static final int IDENT = 10;
+	
+	// constants
+	public static final int INT_CONST = 11;
+    public static final int CHAR_CONST = 12;
+    public static final int BOOL_CONST = 13;
+	
+	// operators
+	public static final int PLUS = 14;
+	public static final int MINUS = 15;
+	public static final int MUL = 16;
+	public static final int DIV = 17;
+	public static final int MOD = 18;
+	public static final int EQUAL = 19;
+	public static final int NEQUAL = 20;
+	public static final int LESS = 21;
+	public static final int LEQUAL = 22;
+	public static final int GREATER = 23;
+	public static final int GEQUAL = 24;
+	public static final int AND = 25;
+	public static final int OR = 26;
+	public static final int NOT = 27;
+	public static final int ASSIGN = 28;
+	public static final int PLUSPLUS = 29;
+	public static final int MINUSMINUS = 30;
+	
+	// seperators
+	public static final int DOT = 31;
+	public static final int COMMA = 32;
+    public static final int SEMI = 33;
+    public static final int LPAREN = 34;
+    public static final int RPAREN = 35;
+    public static final int LBRACE = 36;
+    public static final int RBRACE = 37;
+    public static final int LBRACKET = 38;
+    public static final int RBRACKET = 39;
+    public static final int LSQBRACE = 40;
+    public static final int RSQBRACE = 41;
+    
+    // predefined methods
+    public static final int ORD = 42;
+    public static final int CHR = 43;
+    public static final int LEN = 44;
+    
+    public static final int COLON = 45;
+	
+	public static final int EOF = 46; // token for the end of reading
+	
+	public static final int UNKNOWN = 47;
+}

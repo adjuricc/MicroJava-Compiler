@@ -1,0 +1,20 @@
+program EqualDeclaration
+	const int nula = 0;
+	const int jedan = 1;
+	const int pet = 5;
+	
+
+	int niz[];
+	int mat[][];
+	int mat2[][];
+{
+    void main()
+    	int bodovi;
+    {
+    	mat = new int[2][3];
+		mat2 = mat;
+		mat[0][0] = 1;
+		print(mat[0][0]);
+		print(mat2[0][0]);
+    }
+}

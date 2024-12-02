@@ -1,0 +1,296 @@
+INFO  03:22:16,644 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  03:22:16,659 - #2 program
+INFO  03:22:16,659 - #37 EqualDeclaration
+INFO  03:22:16,659 - #35 const
+INFO  03:22:16,660 - #37 int
+INFO  03:22:16,660 - #37 nula
+INFO  03:22:16,661 - #32 =
+INFO  03:22:16,661 - #36 0
+INFO  03:22:16,661 - #5 ;
+INFO  03:22:16,661 - #35 const
+INFO  03:22:16,662 - #37 int
+INFO  03:22:16,662 - #37 jedan
+INFO  03:22:16,662 - #32 =
+INFO  03:22:16,662 - #36 1
+INFO  03:22:16,662 - #5 ;
+INFO  03:22:16,662 - #35 const
+INFO  03:22:16,662 - #37 int
+INFO  03:22:16,662 - #37 pet
+INFO  03:22:16,662 - #32 =
+INFO  03:22:16,662 - #36 5
+INFO  03:22:16,662 - #5 ;
+INFO  03:22:16,662 - #37 int
+INFO  03:22:16,663 - #37 niz
+INFO  03:22:16,663 - #15 [
+INFO  03:22:16,663 - #16 ]
+INFO  03:22:16,663 - #5 ;
+INFO  03:22:16,664 - #37 int
+INFO  03:22:16,664 - #37 mat
+INFO  03:22:16,664 - #15 [
+INFO  03:22:16,664 - #16 ]
+INFO  03:22:16,664 - #15 [
+INFO  03:22:16,664 - #16 ]
+INFO  03:22:16,665 - #5 ;
+INFO  03:22:16,665 - #3 {
+INFO  03:22:16,665 - #13 void
+INFO  03:22:16,665 - #14 main
+INFO  03:22:16,665 - #6 (
+INFO  03:22:16,665 - #7 )
+INFO  03:22:16,665 - #3 {
+INFO  03:22:16,666 - #37 mat
+INFO  03:22:16,666 - #32 =
+INFO  03:22:16,666 - #17 new
+INFO  03:22:16,666 - #37 int
+INFO  03:22:16,666 - #15 [
+INFO  03:22:16,666 - #36 2
+INFO  03:22:16,666 - #16 ]
+INFO  03:22:16,667 - #15 [
+INFO  03:22:16,667 - #36 3
+INFO  03:22:16,667 - #16 ]
+INFO  03:22:16,667 - #5 ;
+INFO  03:22:16,667 - #37 mat
+INFO  03:22:16,667 - #15 [
+INFO  03:22:16,667 - #36 0
+INFO  03:22:16,667 - #16 ]
+INFO  03:22:16,667 - #15 [
+INFO  03:22:16,667 - #36 1
+INFO  03:22:16,667 - #16 ]
+INFO  03:22:16,667 - #32 =
+INFO  03:22:16,667 - #36 2
+INFO  03:22:16,667 - #5 ;
+INFO  03:22:16,667 - #37 mat
+INFO  03:22:16,667 - #15 [
+INFO  03:22:16,667 - #36 0
+INFO  03:22:16,667 - #16 ]
+INFO  03:22:16,667 - #15 [
+INFO  03:22:16,669 - #36 1
+INFO  03:22:16,669 - #16 ]
+INFO  03:22:16,669 - #22 ++
+INFO  03:22:16,669 - #5 ;
+INFO  03:22:16,669 - #11 print
+INFO  03:22:16,669 - #6 (
+INFO  03:22:16,669 - #37 mat
+INFO  03:22:16,669 - #15 [
+INFO  03:22:16,669 - #36 0
+INFO  03:22:16,669 - #16 ]
+INFO  03:22:16,669 - #15 [
+INFO  03:22:16,669 - #36 1
+INFO  03:22:16,669 - #16 ]
+INFO  03:22:16,669 - #7 )
+INFO  03:22:16,669 - #5 ;
+INFO  03:22:16,669 - #4 }
+INFO  03:22:16,669 - #4 }
+INFO  03:22:16,675 - Program(
+  ProgName(
+   EqualDeclaration
+  ) [ProgName]
+  ConstDeclarations(
+    ConstDeclarations(
+      ConstDeclarations(
+        NoConstDecl(
+        ) [NoConstDecl]
+        ConstDecl(
+          Type(
+           int
+          ) [Type]
+          ConstListOne(
+            ConstDef(
+             nula
+              ConstNumber(
+               0
+              ) [ConstNumber]
+            ) [ConstDef]
+          ) [ConstListOne]
+        ) [ConstDecl]
+      ) [ConstDeclarations]
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        ConstListOne(
+          ConstDef(
+           jedan
+            ConstNumber(
+             1
+            ) [ConstNumber]
+          ) [ConstDef]
+        ) [ConstListOne]
+      ) [ConstDecl]
+    ) [ConstDeclarations]
+    ConstDecl(
+      Type(
+       int
+      ) [Type]
+      ConstListOne(
+        ConstDef(
+         pet
+          ConstNumber(
+           5
+          ) [ConstNumber]
+        ) [ConstDef]
+      ) [ConstListOne]
+    ) [ConstDecl]
+  ) [ConstDeclarations]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+        VarListOne(
+          VarType(
+           niz
+            VarArray(
+            ) [VarArray]
+          ) [VarType]
+        ) [VarListOne]
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarListOne(
+        VarType(
+         mat
+          VarMatrix(
+          ) [VarMatrix]
+        ) [VarType]
+      ) [VarListOne]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MainMethod(
+      ) [MainMethod]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              NoStmt(
+              ) [NoStmt]
+              Assignment(
+                Designator(
+                 mat
+                  DesignatorNoPart(
+                  ) [DesignatorNoPart]
+                ) [Designator]
+                TermExpr(
+                  CommonTerm(
+                    NewFactorMatrix(
+                      Type(
+                       int
+                      ) [Type]
+                      TermExpr(
+                        CommonTerm(
+                          Const(
+                           2
+                          ) [Const]
+                        ) [CommonTerm]
+                      ) [TermExpr]
+                      TermExpr(
+                        CommonTerm(
+                          Const(
+                           3
+                          ) [Const]
+                        ) [CommonTerm]
+                      ) [TermExpr]
+                    ) [NewFactorMatrix]
+                  ) [CommonTerm]
+                ) [TermExpr]
+              ) [Assignment]
+            ) [Statements]
+            Assignment(
+              Designator(
+               mat
+                DesignatorMatrix(
+                  TermExpr(
+                    CommonTerm(
+                      Const(
+                       0
+                      ) [Const]
+                    ) [CommonTerm]
+                  ) [TermExpr]
+                  TermExpr(
+                    CommonTerm(
+                      Const(
+                       1
+                      ) [Const]
+                    ) [CommonTerm]
+                  ) [TermExpr]
+                ) [DesignatorMatrix]
+              ) [Designator]
+              TermExpr(
+                CommonTerm(
+                  Const(
+                   2
+                  ) [Const]
+                ) [CommonTerm]
+              ) [TermExpr]
+            ) [Assignment]
+          ) [Statements]
+          PlusPlusStmt(
+            Designator(
+             mat
+              DesignatorMatrix(
+                TermExpr(
+                  CommonTerm(
+                    Const(
+                     0
+                    ) [Const]
+                  ) [CommonTerm]
+                ) [TermExpr]
+                TermExpr(
+                  CommonTerm(
+                    Const(
+                     1
+                    ) [Const]
+                  ) [CommonTerm]
+                ) [TermExpr]
+              ) [DesignatorMatrix]
+            ) [Designator]
+          ) [PlusPlusStmt]
+        ) [Statements]
+        PrintStmt(
+          TermExpr(
+            CommonTerm(
+              Var(
+                Designator(
+                 mat
+                  DesignatorMatrix(
+                    TermExpr(
+                      CommonTerm(
+                        Const(
+                         0
+                        ) [Const]
+                      ) [CommonTerm]
+                    ) [TermExpr]
+                    TermExpr(
+                      CommonTerm(
+                        Const(
+                         1
+                        ) [Const]
+                      ) [CommonTerm]
+                    ) [TermExpr]
+                  ) [DesignatorMatrix]
+                ) [Designator]
+              ) [Var]
+            ) [CommonTerm]
+          ) [TermExpr]
+        ) [PrintStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  03:22:16,675 - ===================================
+INFO  03:22:16,677 - Obradjuje se funkija main
+INFO  03:22:16,677 - Print count calls = 0
+INFO  03:22:16,677 - VarDecl count = 2
+INFO  03:22:16,677 - ===================================
+INFO  03:22:16,684 - Parsiranje uspesno zavrseno!

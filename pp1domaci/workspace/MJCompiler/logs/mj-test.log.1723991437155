@@ -1,0 +1,95 @@
+INFO  16:14:11,429 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  16:14:11,442 - #2 program
+INFO  16:14:11,442 - #34 MJProgram
+INFO  16:14:11,442 - #34 int
+INFO  16:14:11,443 - #34 x
+INFO  16:14:11,443 - #5 ;
+INFO  16:14:11,443 - #34 int
+INFO  16:14:11,443 - #34 y
+INFO  16:14:11,443 - #5 ;
+INFO  16:14:11,443 - #3 {
+INFO  16:14:11,445 - #34 int
+INFO  16:14:11,445 - #34 main
+INFO  16:14:11,445 - #6 (
+INFO  16:14:11,445 - #7 )
+INFO  16:14:11,445 - #3 {
+INFO  16:14:11,446 - #12 print
+INFO  16:14:11,446 - #6 (
+INFO  16:14:11,446 - #33 1
+INFO  16:14:11,446 - #7 )
+INFO  16:14:11,446 - #5 ;
+INFO  16:14:11,446 - #12 print
+INFO  16:14:11,446 - #6 (
+INFO  16:14:11,449 - #33 2
+INFO  16:14:11,449 - #7 )
+INFO  16:14:11,449 - #5 ;
+INFO  16:14:11,449 - #4 }
+INFO  16:14:11,449 - #4 }
+INFO  16:14:11,450 - Program(
+ MJProgram
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       x
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     y
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          MatchedStmt(
+            PrintStmt(
+              TermExpr(
+                Term(
+                  Const(
+                   1
+                  ) [Const]
+                ) [Term]
+              ) [TermExpr]
+            ) [PrintStmt]
+          ) [MatchedStmt]
+        ) [Statements]
+        MatchedStmt(
+          PrintStmt(
+            TermExpr(
+              Term(
+                Const(
+                 2
+                ) [Const]
+              ) [Term]
+            ) [TermExpr]
+          ) [PrintStmt]
+        ) [MatchedStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  16:14:11,450 - ===================================
+INFO  16:14:11,451 - Prepoznata naredba print!
+INFO  16:14:11,451 - Prepoznata naredba print!
+INFO  16:14:11,451 - Print count calls = 2
+INFO  16:14:11,451 - VarDecl count = 2

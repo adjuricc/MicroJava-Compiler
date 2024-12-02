@@ -1,0 +1,40 @@
+INFO  11:15:20,152 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  11:15:20,171 - #2 program
+INFO  11:15:20,171 - #35 test301
+INFO  11:15:20,172 - #33 const
+INFO  11:15:20,172 - #35 int
+INFO  11:15:20,172 - #35 nula
+INFO  11:15:20,173 - #30 =
+INFO  11:15:20,173 - #34 0
+INFO  11:15:20,173 - #5 ;
+INFO  11:15:20,174 - #33 const
+INFO  11:15:20,174 - #35 int
+INFO  11:15:20,174 - #35 jedan
+INFO  11:15:20,174 - #30 =
+INFO  11:15:20,175 - #34 1
+INFO  11:15:20,175 - #5 ;
+INFO  11:15:20,175 - #33 const
+INFO  11:15:20,175 - #35 int
+INFO  11:15:20,175 - #35 pet
+INFO  11:15:20,175 - #30 =
+INFO  11:15:20,175 - #34 5
+INFO  11:15:20,175 - #5 ;
+INFO  11:15:20,175 - #35 int
+INFO  11:15:20,176 - #35 niz
+INFO  11:15:20,176 - #14 [
+INFO  11:15:20,176 - #15 ]
+INFO  11:15:20,176 - #5 ;
+INFO  11:15:20,177 - #35 char
+INFO  11:15:20,177 - #35 nizch
+INFO  11:15:20,177 - #14 [
+INFO  11:15:20,177 - #15 ]
+INFO  11:15:20,177 - #5 ;
+INFO  11:15:20,177 - #35 int
+INFO  11:15:20,177 - #35 a
+INFO  11:15:20,177 - #5 ;
+INFO  11:15:20,177 - #3 {
+INFO  11:15:20,177 - #12 void
+INFO  11:15:20,178 - #35 main
+ERROR 11:15:20,178 - 
+Sintaksna greska na liniji 15, value: main
+ERROR 11:15:20,178 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 15, value: main

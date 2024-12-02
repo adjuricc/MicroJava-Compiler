@@ -1,0 +1,4 @@
+program MJProgram
+
+int x, y;
+x = y + 5;

@@ -1,0 +1,31 @@
+package rs.ac.bg.etf.pp1;
+
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.etf.pp1.mj.runtime.Code;
+import rs.etf.pp1.symboltable.Tab;
+
+public class CodeGenerator extends VisitorAdaptor {
+	private int mainPc;
+	
+	public int getMainPc() {
+		return mainPc;
+	}
+	
+	public void visit(PrintStmt visitor) {
+		if(visitor.getExpr().struct == Tab.intType) {
+			Code.loadConst(5);
+			Code.put(Code.print);
+		}
+		else {
+			Code.loadConst(1);
+			Code.put(Code.bprint);
+		}
+	}
+	
+	public void visit(MainMethod visitor) {
+		mainPc = Code.pc;
+		visitor.obj.setAdr(mainPc);
+		
+		SyntaxNode methodNode = visitor.getParent();
+	}
+}

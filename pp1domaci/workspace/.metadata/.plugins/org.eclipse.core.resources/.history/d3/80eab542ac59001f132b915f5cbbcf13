@@ -1,0 +1,6 @@
+program p
+
+void main(){
+	bool ch = true;
+	(-ch);
+}

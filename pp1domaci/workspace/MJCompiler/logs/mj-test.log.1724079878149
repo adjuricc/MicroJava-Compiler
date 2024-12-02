@@ -1,0 +1,43 @@
+INFO  17:04:19,113 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  17:04:19,131 - #2 program
+INFO  17:04:19,131 - #34 test301
+INFO  17:04:19,131 - #32 const
+INFO  17:04:19,132 - #34 int
+INFO  17:04:19,132 - #34 nula
+INFO  17:04:19,133 - #29 =
+INFO  17:04:19,133 - #33 0
+INFO  17:04:19,133 - #5 ;
+INFO  17:04:19,133 - #32 const
+INFO  17:04:19,134 - #34 int
+INFO  17:04:19,134 - #34 jedan
+INFO  17:04:19,134 - #29 =
+INFO  17:04:19,134 - #33 1
+INFO  17:04:19,134 - #5 ;
+INFO  17:04:19,134 - #32 const
+INFO  17:04:19,134 - #34 int
+INFO  17:04:19,134 - #34 pet
+INFO  17:04:19,134 - #29 =
+INFO  17:04:19,134 - #33 5
+INFO  17:04:19,134 - #5 ;
+INFO  17:04:19,134 - #34 int
+INFO  17:04:19,136 - #34 niz
+INFO  17:04:19,136 - #13 [
+INFO  17:04:19,136 - #14 ]
+INFO  17:04:19,136 - #5 ;
+INFO  17:04:19,136 - #34 char
+INFO  17:04:19,137 - #34 nizch
+INFO  17:04:19,137 - #13 [
+INFO  17:04:19,137 - #14 ]
+INFO  17:04:19,137 - #5 ;
+INFO  17:04:19,137 - #34 int
+INFO  17:04:19,137 - #34 a
+INFO  17:04:19,137 - #5 ;
+INFO  17:04:19,137 - #3 {
+INFO  17:04:19,137 - #34 int
+INFO  17:04:19,138 - #34 main
+INFO  17:04:19,138 - #6 (
+INFO  17:04:19,138 - #7 )
+INFO  17:04:19,138 - #34 int
+ERROR 17:04:19,138 - 
+Sintaksna greska na liniji 16, value: int
+ERROR 17:04:19,138 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 16, value: int

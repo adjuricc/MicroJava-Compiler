@@ -1,0 +1,13 @@
+program MJProgram
+	const int val = 10;
+	int x; int y;
+	
+{
+	int main(){
+		print(1);
+		
+		x = y + 5;
+		
+		print(2);
+	}
+}

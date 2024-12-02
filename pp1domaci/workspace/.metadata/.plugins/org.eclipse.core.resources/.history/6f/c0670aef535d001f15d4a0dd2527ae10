@@ -1,0 +1,86 @@
+
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.Symbol;
+
+%%
+
+%{
+
+	// ukljucivanje informacije o poziciji tokena
+	private Symbol new_symbol(int type) {
+		return new Symbol(type, yyline+1, yycolumn);
+	}
+	
+	// ukljucivanje informacije o poziciji tokena
+	private Symbol new_symbol(int type, Object value) {
+		return new Symbol(type, yyline+1, yycolumn, value);
+	}
+
+%}
+
+%cup
+%line
+%column
+
+%xstate COMMENT
+
+%eofval{
+	return new_symbol(sym_old.EOF);
+%eofval}
+
+%%
+
+" " 	{ }
+"\b" 	{ }
+"\t" 	{ }
+"\r\n" 	{ }
+"\f" 	{ }
+
+"program"   { return new_symbol(sym_old.PROG, yytext());}
+"print" 	{ return new_symbol(sym_old.PRINT, yytext()); }
+"return" 	{ return new_symbol(sym_old.RETURN, yytext()); }
+"void" 		{ return new_symbol(sym_old.VOID, yytext()); }
+"const" 	{ return new_symbol(sym_old.CONST, yytext()); }
+
+"+" 		{ return new_symbol(sym_old.PLUS, yytext()); }
+"-" 		{ return new_symbol(sym_old.MINUS, yytext()); }
+"*" 		{ return new_symbol(sym_old.MUL, yytext()); }
+"/" 		{ return new_symbol(sym_old.DIV, yytext()); }
+"%" 		{ return new_symbol(sym_old.MOD, yytext()); }
+
+"==" 		{ return new_symbol(sym_old.EQUAL, yytext()); }
+"!=" 		{ return new_symbol(sym_old.NEQUAL, yytext()); }
+">" 		{ return new_symbol(sym_old.GREATER, yytext()); }
+">=" 		{ return new_symbol(sym_old.GEQUAL, yytext()); }
+"<" 		{ return new_symbol(sym_old.LESS, yytext()); }
+"<=" 		{ return new_symbol(sym_old.LEQUAL, yytext()); }
+"&&" 		{ return new_symbol(sym_old.AND, yytext()); }
+"||" 		{ return new_symbol(sym_old.OR, yytext()); }
+"++" 		{ return new_symbol(sym_old.PLUSPLUS, yytext()); }
+"--" 		{ return new_symbol(sym_old.MINUSMINUS, yytext()); }
+"!" 		{ return new_symbol(sym_old.NOT, yytext()); }
+
+"=" 		{ return new_symbol(sym_old.ASSIGN, yytext()); }
+";" 		{ return new_symbol(sym_old.SEMI, yytext()); }
+":" 		{ return new_symbol(sym_old.COLON, yytext()); }
+"," 		{ return new_symbol(sym_old.COMMA, yytext()); }
+"." 		{ return new_symbol(sym_old.DOT, yytext()); }
+"(" 		{ return new_symbol(sym_old.LPAREN, yytext()); }
+")" 		{ return new_symbol(sym_old.RPAREN, yytext()); }
+"{" 		{ return new_symbol(sym_old.LBRACE, yytext()); }
+"}"			{ return new_symbol(sym_old.RBRACE, yytext()); }
+"["			{ return new_symbol(sym_old.LSQBRACE, yytext()); }
+"]"			{ return new_symbol(sym_old.RSQBRACE, yytext()); }
+
+"//" {yybegin(COMMENT);}
+<COMMENT> . {yybegin(COMMENT);}
+<COMMENT> "\r\n" { yybegin(YYINITIAL); }
+
+true|false		{ return new_symbol(sym_old.BOOL_CONST, yytext()); }
+"'(.)'" 	{ return new_symbol(sym_old.CHAR_CONST, yytext()); }
+
+[0-9]+  { return new_symbol(sym_old.INT_CONST, new Integer (yytext())); }
+([a-z]|[A-Z])[a-z|A-Z|0-9|_]* 	{return new_symbol (sym_old.IDENT, yytext()); }
+
+. { System.err.println("Leksicka greska ("+yytext()+") u liniji "+(yyline+1)); }

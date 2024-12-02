@@ -1,0 +1,9 @@
+program p;
+
+main(){
+	int x, y;
+	
+	x = 5;
+	y = true;
+	y = 'b';
+}

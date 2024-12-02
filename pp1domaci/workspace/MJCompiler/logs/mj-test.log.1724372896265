@@ -1,0 +1,89 @@
+INFO  02:26:24,681 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  02:26:24,700 - #2 program
+INFO  02:26:24,700 - #37 test301
+INFO  02:26:24,700 - #37 int
+INFO  02:26:24,701 - #37 a
+INFO  02:26:24,701 - #10 ,
+INFO  02:26:24,703 - #37 b
+INFO  02:26:24,703 - #10 ,
+INFO  02:26:24,703 - #37 c
+INFO  02:26:24,703 - #5 ;
+INFO  02:26:24,703 - #3 {
+INFO  02:26:24,703 - #13 void
+INFO  02:26:24,704 - #14 main
+INFO  02:26:24,704 - #6 (
+INFO  02:26:24,704 - #7 )
+INFO  02:26:24,704 - #3 {
+INFO  02:26:24,704 - #11 print
+INFO  02:26:24,705 - #6 (
+INFO  02:26:24,705 - #36 1
+INFO  02:26:24,705 - #7 )
+INFO  02:26:24,705 - #5 ;
+INFO  02:26:24,705 - #4 }
+INFO  02:26:24,705 - #4 }
+INFO  02:26:24,710 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoConstDecl(
+  ) [NoConstDecl]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarListMany(
+        VarListMany(
+          VarListOne(
+            VarType(
+             a
+              VarNoArray(
+              ) [VarNoArray]
+            ) [VarType]
+          ) [VarListOne]
+          VarType(
+           b
+            VarNoArray(
+            ) [VarNoArray]
+          ) [VarType]
+        ) [VarListMany]
+        VarType(
+         c
+          VarNoArray(
+          ) [VarNoArray]
+        ) [VarType]
+      ) [VarListMany]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MainMethod(
+      ) [MainMethod]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        PrintStmt(
+          TermExpr(
+            CommonTerm(
+              Const(
+               1
+              ) [Const]
+            ) [CommonTerm]
+          ) [TermExpr]
+        ) [PrintStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  02:26:24,710 - ===================================
+INFO  02:26:24,712 - Obradjuje se funkija main
+INFO  02:26:24,712 - Print count calls = 0
+INFO  02:26:24,713 - VarDecl count = 3
+INFO  02:26:24,713 - ===================================
+INFO  02:26:24,719 - Parsiranje uspesno zavrseno!

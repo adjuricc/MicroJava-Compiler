@@ -1,0 +1,63 @@
+INFO  15:12:36,037 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  15:12:36,049 - #2 program
+INFO  15:12:36,049 - #34 MJProgram
+INFO  15:12:36,049 - #3 {
+INFO  15:12:36,049 - #34 int
+INFO  15:12:36,050 - #34 main
+INFO  15:12:36,051 - #6 (
+INFO  15:12:36,051 - #7 )
+INFO  15:12:36,051 - #3 {
+INFO  15:12:36,051 - #34 int
+INFO  15:12:36,051 - #34 x
+ERROR 15:12:36,052 - 
+Sintaksna greska na liniji 4, value: x
+INFO  15:12:36,052 - #10 ,
+INFO  15:12:36,052 - #34 y
+INFO  15:12:36,052 - #5 ;
+INFO  15:12:36,052 - #34 x
+INFO  15:12:36,052 - #29 =
+INFO  15:12:36,052 - #33 6
+ERROR 15:12:36,052 - Izvrsen oporavak do ; u liniji 4
+INFO  15:12:36,053 - #5 ;
+INFO  15:12:36,056 - #4 }
+INFO  15:12:36,056 - #4 }
+INFO  15:12:36,057 - Program(
+ MJProgram
+  NoConstDecl(
+  ) [NoConstDecl]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      Statements(
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          ErrorStmt(
+          ) [ErrorStmt]
+        ) [Statements]
+        Assignment(
+          Designator(
+           x
+          ) [Designator]
+          TermExpr(
+            Term(
+              Const(
+               6
+              ) [Const]
+            ) [Term]
+          ) [TermExpr]
+        ) [Assignment]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  15:12:36,057 - ===================================
+INFO  15:12:36,058 - Print count calls = 0
+INFO  15:12:36,058 - VarDecl count = 0

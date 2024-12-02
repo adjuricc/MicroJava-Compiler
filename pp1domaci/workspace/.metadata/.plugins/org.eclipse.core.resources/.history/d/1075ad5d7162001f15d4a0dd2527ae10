@@ -1,0 +1,10 @@
+program EqualDeclaration
+	int mat[][];
+{
+    void main()
+    {
+        mat = new int[2][3];
+		mat[nula][jedan - 1] = jedan;
+		print(mat[0][0]);
+    }
+}

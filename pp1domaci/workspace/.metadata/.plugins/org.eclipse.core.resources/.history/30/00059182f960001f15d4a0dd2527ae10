@@ -1,0 +1,28 @@
+// Test301
+
+program test301
+	const int nula = 0;
+	const int jedan = 1;
+	const int pet = 5;
+	
+	int a;
+	char ch;
+{
+    void main() 
+    	int bodovi;
+    	bool bt;
+    {	
+    	bodovi = 0;
+		bodovi++;
+		bodovi = bodovi + jedan;
+		bodovi = bodovi * pet;
+		bodovi--;
+		print(bodovi);
+		
+		a=1;
+		read(bodovi);
+		bodovi = -bodovi + (pet * a / 2 - jedan) * bodovi - (3 % 2 + 3 * 2 - 3); 
+		print(bodovi);
+
+    }
+}

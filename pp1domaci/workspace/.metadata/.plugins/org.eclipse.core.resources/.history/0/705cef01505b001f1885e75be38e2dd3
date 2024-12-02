@@ -1,0 +1,22 @@
+
+terminal PROG, IDENT, LBRACE, RBRACE, IDENT, SEMI, LPAREN, RPAREN;
+
+nonterminal Program, VarDeclList, MethodDeclList, VarDecl, Type, MethodDecl;
+nonterminal FormPars, StatementList;
+
+Program ::= (Program) PROG IDENT VarDeclList LBRACE MethodDeclList RBRACE;
+
+VarDeclList ::= (VarDeclarations) VarDeclList VarDecl
+			|
+			(NoVarDecl)/* epsilon */
+			;
+
+VarDecl ::= (VarDeclaration) Type:varType IDENT:varName SEMI;
+
+MethodDeclList ::= (MethodDeclarations) MethodDeclList MethodDecl
+				| 
+				(NoMethodDecl) /* epsilon */
+				; 
+
+MethodDecl ::= (MethodDecl) Type:retType IDENT:methName LPAREN FormPars RPAREN VarDeclList LBRACE StatementList RBRACE;
+

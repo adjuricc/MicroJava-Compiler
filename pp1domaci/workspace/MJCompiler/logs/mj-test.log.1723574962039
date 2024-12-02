@@ -1,0 +1,14 @@
+INFO  20:45:36,775 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  20:45:36,778 - #1 program
+INFO  20:45:36,778 - #14 p
+INFO  20:45:36,778 - #4 void
+INFO  20:45:36,778 - #14 main
+INFO  20:45:36,778 - #35 (
+INFO  20:45:36,778 - #36 )
+INFO  20:45:36,778 - #37 {
+INFO  20:45:36,778 - #7 bool
+INFO  20:45:36,778 - #14 ch
+INFO  20:45:36,778 - #32 =
+INFO  20:45:36,778 - #14 true_const
+INFO  20:45:36,778 - #34 ;
+INFO  20:45:36,778 - #38 }

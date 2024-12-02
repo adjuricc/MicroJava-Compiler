@@ -1,0 +1,21 @@
+package rs.ac.bg.etf.pp1;
+
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.etf.pp1.symboltable.Tab;
+
+public class CodeGenerator extends VisitorAdaptor {
+	private int mainPc;
+	
+	public int getMainPc() {
+		return mainPc;
+	}
+	
+	public void visit(PrintStmt visitor) {
+		if(visitor.getExpr().struct == Tab.intType) {
+			
+		}
+		else {
+			
+		}
+	}
+}

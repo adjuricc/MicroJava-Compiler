@@ -1,0 +1,70 @@
+INFO  02:01:34,233 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  02:01:34,251 - #2 program
+INFO  02:01:34,252 - #37 test301
+INFO  02:01:34,252 - #3 {
+INFO  02:01:34,253 - #13 void
+INFO  02:01:34,253 - #14 main
+INFO  02:01:34,253 - #6 (
+INFO  02:01:34,254 - #7 )
+INFO  02:01:34,254 - #3 {
+INFO  02:01:34,254 - #11 print
+INFO  02:01:34,255 - #6 (
+INFO  02:01:34,255 - #36 1
+INFO  02:01:34,255 - #7 )
+INFO  02:01:34,255 - #5 ;
+INFO  02:01:34,255 - #11 print
+INFO  02:01:34,255 - #6 (
+INFO  02:01:34,255 - #36 2
+INFO  02:01:34,255 - #7 )
+INFO  02:01:34,255 - #5 ;
+INFO  02:01:34,255 - #4 }
+INFO  02:01:34,255 - #4 }
+INFO  02:01:34,263 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoConstDecl(
+  ) [NoConstDecl]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MainMethod(
+      ) [MainMethod]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          PrintStmt(
+            TermExpr(
+              CommonTerm(
+                Const(
+                 1
+                ) [Const]
+              ) [CommonTerm]
+            ) [TermExpr]
+          ) [PrintStmt]
+        ) [Statements]
+        PrintStmt(
+          TermExpr(
+            CommonTerm(
+              Const(
+               2
+              ) [Const]
+            ) [CommonTerm]
+          ) [TermExpr]
+        ) [PrintStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  02:01:34,263 - ===================================
+INFO  02:01:34,264 - Obradjuje se funkija main
+INFO  02:01:34,264 - Print count calls = 0
+INFO  02:01:34,265 - VarDecl count = 0
+INFO  02:01:34,265 - ===================================
+INFO  02:01:34,272 - Parsiranje uspesno zavrseno!

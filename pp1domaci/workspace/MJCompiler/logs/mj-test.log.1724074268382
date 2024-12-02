@@ -1,0 +1,162 @@
+INFO  15:30:42,948 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  15:30:42,963 - #2 program
+INFO  15:30:42,963 - #34 MJProgram
+INFO  15:30:42,963 - #34 int
+INFO  15:30:42,964 - #34 x
+INFO  15:30:42,964 - #10 ,
+INFO  15:30:42,965 - #34 y
+INFO  15:30:42,965 - #5 ;
+INFO  15:30:42,965 - #34 bool
+INFO  15:30:42,965 - #34 found
+INFO  15:30:42,966 - #5 ;
+INFO  15:30:42,966 - #3 {
+INFO  15:30:42,966 - #34 int
+INFO  15:30:42,966 - #34 main
+INFO  15:30:42,966 - #6 (
+INFO  15:30:42,966 - #7 )
+INFO  15:30:42,966 - #3 {
+INFO  15:30:42,966 - #34 y
+INFO  15:30:42,967 - #29 =
+INFO  15:30:42,967 - #33 3
+INFO  15:30:42,967 - #5 ;
+INFO  15:30:42,968 - #34 x
+INFO  15:30:42,977 - #29 =
+INFO  15:30:42,977 - #34 y
+INFO  15:30:42,977 - #9 +
+INFO  15:30:42,977 - #33 5
+INFO  15:30:42,978 - #5 ;
+INFO  15:30:42,978 - #34 found
+INFO  15:30:42,978 - #29 =
+INFO  15:30:42,978 - #35 true
+INFO  15:30:42,978 - #5 ;
+INFO  15:30:42,978 - #11 print
+INFO  15:30:42,978 - #6 (
+INFO  15:30:42,978 - #34 x
+INFO  15:30:42,978 - #7 )
+INFO  15:30:42,978 - #5 ;
+INFO  15:30:42,978 - #8 return
+INFO  15:30:42,978 - #5 ;
+INFO  15:30:42,978 - #4 }
+INFO  15:30:42,979 - #4 }
+INFO  15:30:42,980 - Program(
+ MJProgram
+  NoConstDecl(
+  ) [NoConstDecl]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+        VarListMany(
+          VarListOne(
+            VarTypeIdent(
+             x
+            ) [VarTypeIdent]
+          ) [VarListOne]
+          VarTypeIdent(
+           y
+          ) [VarTypeIdent]
+        ) [VarListMany]
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       bool
+      ) [Type]
+      VarListOne(
+        VarTypeIdent(
+         found
+        ) [VarTypeIdent]
+      ) [VarListOne]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                NoStmt(
+                ) [NoStmt]
+                Assignment(
+                  Designator(
+                   y
+                  ) [Designator]
+                  TermExpr(
+                    Term(
+                      Const(
+                       3
+                      ) [Const]
+                    ) [Term]
+                  ) [TermExpr]
+                ) [Assignment]
+              ) [Statements]
+              Assignment(
+                Designator(
+                 x
+                ) [Designator]
+                AddExpr(
+                  TermExpr(
+                    Term(
+                      Var(
+                        Designator(
+                         y
+                        ) [Designator]
+                      ) [Var]
+                    ) [Term]
+                  ) [TermExpr]
+                  AddopPlus(
+                  ) [AddopPlus]
+                  Term(
+                    Const(
+                     5
+                    ) [Const]
+                  ) [Term]
+                ) [AddExpr]
+              ) [Assignment]
+            ) [Statements]
+            Assignment(
+              Designator(
+               found
+              ) [Designator]
+              TermExpr(
+                Term(
+                  FactorBool(
+                   true
+                  ) [FactorBool]
+                ) [Term]
+              ) [TermExpr]
+            ) [Assignment]
+          ) [Statements]
+          PrintStmt(
+            TermExpr(
+              Term(
+                Var(
+                  Designator(
+                   x
+                  ) [Designator]
+                ) [Var]
+              ) [Term]
+            ) [TermExpr]
+          ) [PrintStmt]
+        ) [Statements]
+        ReturnNoExpr(
+        ) [ReturnNoExpr]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  15:30:42,981 - ===================================
+INFO  15:30:42,982 - Prepoznata naredba print!
+INFO  15:30:42,982 - Print count calls = 1
+INFO  15:30:42,982 - VarDecl count = 2

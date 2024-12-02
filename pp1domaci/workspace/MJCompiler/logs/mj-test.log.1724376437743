@@ -1,0 +1,235 @@
+INFO  03:26:53,668 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  03:26:53,683 - #2 program
+INFO  03:26:53,683 - #37 test301
+INFO  03:26:53,683 - #37 int
+INFO  03:26:53,684 - #37 a
+INFO  03:26:53,684 - #5 ;
+INFO  03:26:53,685 - #3 {
+INFO  03:26:53,685 - #13 void
+INFO  03:26:53,687 - #14 main
+INFO  03:26:53,687 - #6 (
+INFO  03:26:53,687 - #7 )
+INFO  03:26:53,687 - #37 int
+INFO  03:26:53,687 - #37 bodovi
+INFO  03:26:53,687 - #5 ;
+INFO  03:26:53,687 - #37 bool
+INFO  03:26:53,687 - #37 bt
+INFO  03:26:53,687 - #5 ;
+INFO  03:26:53,687 - #3 {
+INFO  03:26:53,687 - #37 bodovi
+INFO  03:26:53,687 - #32 =
+INFO  03:26:53,689 - #36 0
+INFO  03:26:53,689 - #5 ;
+INFO  03:26:53,689 - #37 bodovi
+INFO  03:26:53,689 - #32 =
+INFO  03:26:53,689 - #36 2
+INFO  03:26:53,690 - #9 +
+INFO  03:26:53,690 - #37 bodovi
+INFO  03:26:53,690 - #5 ;
+INFO  03:26:53,690 - #37 bodovi
+INFO  03:26:53,691 - #32 =
+INFO  03:26:53,691 - #37 bodovi
+INFO  03:26:53,691 - #9 +
+INFO  03:26:53,691 - #36 5
+INFO  03:26:53,691 - #5 ;
+INFO  03:26:53,691 - #11 print
+INFO  03:26:53,691 - #6 (
+INFO  03:26:53,691 - #37 bodovi
+INFO  03:26:53,691 - #7 )
+INFO  03:26:53,691 - #5 ;
+INFO  03:26:53,691 - #4 }
+INFO  03:26:53,691 - #4 }
+INFO  03:26:53,698 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoConstDecl(
+  ) [NoConstDecl]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarListOne(
+        VarType(
+         a
+          VarNoArray(
+          ) [VarNoArray]
+        ) [VarType]
+      ) [VarListOne]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MainMethod(
+      ) [MainMethod]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarListOne(
+              VarType(
+               bodovi
+                VarNoArray(
+                ) [VarNoArray]
+              ) [VarType]
+            ) [VarListOne]
+          ) [VarDecl]
+        ) [VarDeclarations]
+        VarDecl(
+          Type(
+           bool
+          ) [Type]
+          VarListOne(
+            VarType(
+             bt
+              VarNoArray(
+              ) [VarNoArray]
+            ) [VarType]
+          ) [VarListOne]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              NoStmt(
+              ) [NoStmt]
+              Assignment(
+                Designator(
+                 bodovi
+                  DesignatorNoPart(
+                  ) [DesignatorNoPart]
+                ) [Designator]
+                TermExpr(
+                  CommonTerm(
+                    Const(
+                     0
+                    ) [Const]
+                  ) [CommonTerm]
+                ) [TermExpr]
+              ) [Assignment]
+            ) [Statements]
+            Assignment(
+              Designator(
+               bodovi
+                DesignatorNoPart(
+                ) [DesignatorNoPart]
+              ) [Designator]
+              AddExpr(
+                TermExpr(
+                  CommonTerm(
+                    Const(
+                     2
+                    ) [Const]
+                  ) [CommonTerm]
+                ) [TermExpr]
+                AddopPlus(
+                ) [AddopPlus]
+                CommonTerm(
+                  Var(
+                    Designator(
+                     bodovi
+                      DesignatorNoPart(
+                      ) [DesignatorNoPart]
+                    ) [Designator]
+                  ) [Var]
+                ) [CommonTerm]
+              ) [AddExpr]
+            ) [Assignment]
+          ) [Statements]
+          Assignment(
+            Designator(
+             bodovi
+              DesignatorNoPart(
+              ) [DesignatorNoPart]
+            ) [Designator]
+            AddExpr(
+              TermExpr(
+                CommonTerm(
+                  Var(
+                    Designator(
+                     bodovi
+                      DesignatorNoPart(
+                      ) [DesignatorNoPart]
+                    ) [Designator]
+                  ) [Var]
+                ) [CommonTerm]
+              ) [TermExpr]
+              AddopPlus(
+              ) [AddopPlus]
+              CommonTerm(
+                Const(
+                 5
+                ) [Const]
+              ) [CommonTerm]
+            ) [AddExpr]
+          ) [Assignment]
+        ) [Statements]
+        PrintStmt(
+          TermExpr(
+            CommonTerm(
+              Var(
+                Designator(
+                 bodovi
+                  DesignatorNoPart(
+                  ) [DesignatorNoPart]
+                ) [Designator]
+              ) [Var]
+            ) [CommonTerm]
+          ) [TermExpr]
+        ) [PrintStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  03:26:53,699 - ===================================
+INFO  03:26:53,701 - Obradjuje se funkija main
+INFO  03:26:53,701 - TermExpr(
+  CommonTerm(
+    Const(
+     2
+    ) [Const]
+  ) [CommonTerm]
+) [TermExpr]
+INFO  03:26:53,701 - CommonTerm(
+  Var(
+    Designator(
+     bodovi
+      DesignatorNoPart(
+      ) [DesignatorNoPart]
+    ) [Designator]
+  ) [Var]
+) [CommonTerm]
+INFO  03:26:53,701 - 1
+INFO  03:26:53,701 - 1
+INFO  03:26:53,702 - TermExpr(
+  CommonTerm(
+    Var(
+      Designator(
+       bodovi
+        DesignatorNoPart(
+        ) [DesignatorNoPart]
+      ) [Designator]
+    ) [Var]
+  ) [CommonTerm]
+) [TermExpr]
+INFO  03:26:53,702 - CommonTerm(
+  Const(
+   5
+  ) [Const]
+) [CommonTerm]
+INFO  03:26:53,702 - 1
+INFO  03:26:53,702 - 1
+INFO  03:26:53,702 - Print count calls = 0
+INFO  03:26:53,702 - VarDecl count = 3
+INFO  03:26:53,702 - ===================================
+INFO  03:26:53,710 - Parsiranje uspesno zavrseno!

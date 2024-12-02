@@ -1,0 +1,17 @@
+// Test301
+
+program test301
+	int a;
+{
+    void main() 
+    	int bodovi;
+    	bool bt;
+    {	
+    	bodovi = 0;
+    	bodovi = 2 + bodovi;
+    	bodovi = bodovi + 5;
+    	bodovi = bodovi * 2;
+    	bodovi = 2 * bodovi;
+    	print(bodovi);
+    }
+}

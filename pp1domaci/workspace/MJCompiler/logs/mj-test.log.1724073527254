@@ -1,0 +1,141 @@
+INFO  15:18:15,511 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  15:18:15,521 - #2 program
+INFO  15:18:15,521 - #34 MJProgram
+INFO  15:18:15,522 - #34 int
+INFO  15:18:15,522 - #34 x
+INFO  15:18:15,523 - #10 ,
+INFO  15:18:15,523 - #34 y
+INFO  15:18:15,523 - #5 ;
+INFO  15:18:15,524 - #3 {
+INFO  15:18:15,524 - #34 int
+INFO  15:18:15,525 - #34 main
+INFO  15:18:15,525 - #6 (
+INFO  15:18:15,525 - #7 )
+INFO  15:18:15,525 - #3 {
+INFO  15:18:15,525 - #34 y
+INFO  15:18:15,525 - #29 =
+INFO  15:18:15,526 - #33 3
+INFO  15:18:15,526 - #5 ;
+INFO  15:18:15,528 - #34 x
+INFO  15:18:15,528 - #29 =
+INFO  15:18:15,528 - #34 y
+INFO  15:18:15,528 - #9 +
+INFO  15:18:15,528 - #33 5
+INFO  15:18:15,536 - #5 ;
+INFO  15:18:15,536 - #34 int
+INFO  15:18:15,536 - #34 a
+ERROR 15:18:15,537 - 
+Sintaksna greska na liniji 9, value: a
+INFO  15:18:15,537 - #29 =
+INFO  15:18:15,537 - #33 17
+INFO  15:18:15,537 - #5 ;
+INFO  15:18:15,537 - #11 print
+INFO  15:18:15,537 - #6 (
+INFO  15:18:15,537 - #34 x
+ERROR 15:18:15,537 - Izvrsen oporavak do ; u liniji 9
+INFO  15:18:15,537 - #7 )
+INFO  15:18:15,538 - #5 ;
+INFO  15:18:15,538 - #8 return
+INFO  15:18:15,538 - #5 ;
+INFO  15:18:15,538 - #4 }
+INFO  15:18:15,538 - #4 }
+INFO  15:18:15,539 - Program(
+ MJProgram
+  NoConstDecl(
+  ) [NoConstDecl]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarListMany(
+        VarListOne(
+          VarTypeIdent(
+           x
+          ) [VarTypeIdent]
+        ) [VarListOne]
+        VarTypeIdent(
+         y
+        ) [VarTypeIdent]
+      ) [VarListMany]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                NoStmt(
+                ) [NoStmt]
+                Assignment(
+                  Designator(
+                   y
+                  ) [Designator]
+                  TermExpr(
+                    Term(
+                      Const(
+                       3
+                      ) [Const]
+                    ) [Term]
+                  ) [TermExpr]
+                ) [Assignment]
+              ) [Statements]
+              Assignment(
+                Designator(
+                 x
+                ) [Designator]
+                AddExpr(
+                  TermExpr(
+                    Term(
+                      Var(
+                        Designator(
+                         y
+                        ) [Designator]
+                      ) [Var]
+                    ) [Term]
+                  ) [TermExpr]
+                  AddopPlus(
+                  ) [AddopPlus]
+                  Term(
+                    Const(
+                     5
+                    ) [Const]
+                  ) [Term]
+                ) [AddExpr]
+              ) [Assignment]
+            ) [Statements]
+            ErrorStmt(
+            ) [ErrorStmt]
+          ) [Statements]
+          PrintStmt(
+            TermExpr(
+              Term(
+                Var(
+                  Designator(
+                   x
+                  ) [Designator]
+                ) [Var]
+              ) [Term]
+            ) [TermExpr]
+          ) [PrintStmt]
+        ) [Statements]
+        ReturnNoExpr(
+        ) [ReturnNoExpr]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  15:18:15,539 - ===================================
+INFO  15:18:15,540 - Prepoznata naredba print!
+INFO  15:18:15,540 - Print count calls = 1
+INFO  15:18:15,540 - VarDecl count = 1

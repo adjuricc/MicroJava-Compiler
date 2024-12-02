@@ -1,0 +1,111 @@
+INFO  16:30:59,989 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  16:31:00,016 - #2 program
+INFO  16:31:00,016 - #34 MJProgram
+INFO  16:31:00,016 - #34 int
+INFO  16:31:00,017 - #34 x
+INFO  16:31:00,018 - #5 ;
+INFO  16:31:00,018 - #34 int
+INFO  16:31:00,019 - #34 y
+INFO  16:31:00,019 - #5 ;
+INFO  16:31:00,019 - #3 {
+INFO  16:31:00,019 - #34 int
+INFO  16:31:00,020 - #34 main
+INFO  16:31:00,020 - #6 (
+INFO  16:31:00,020 - #7 )
+INFO  16:31:00,020 - #3 {
+INFO  16:31:00,020 - #12 print
+INFO  16:31:00,022 - #6 (
+INFO  16:31:00,022 - #33 1
+INFO  16:31:00,022 - #7 )
+INFO  16:31:00,023 - #5 ;
+INFO  16:31:00,023 - #34 x
+INFO  16:31:00,024 - #29 =
+ERROR 16:31:00,036 - 
+Sintaksna greska na liniji 7
+INFO  16:31:00,036 - #34 y
+INFO  16:31:00,036 - #10 +
+INFO  16:31:00,036 - #33 5
+INFO  16:31:00,036 - #10 +
+INFO  16:31:00,036 - #5 ;
+INFO  16:31:00,036 - #12 print
+INFO  16:31:00,036 - #6 (
+INFO  16:31:00,036 - #33 2
+ERROR 16:31:00,036 - Izvrsen oporavak do ; u liniji 7
+INFO  16:31:00,037 - #7 )
+INFO  16:31:00,037 - #5 ;
+INFO  16:31:00,037 - #4 }
+INFO  16:31:00,038 - #4 }
+INFO  16:31:00,039 - Program(
+ MJProgram
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       x
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     y
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          Statements(
+            NoStmt(
+            ) [NoStmt]
+            MatchedStmt(
+              PrintStmt(
+                TermExpr(
+                  Term(
+                    Const(
+                     1
+                    ) [Const]
+                  ) [Term]
+                ) [TermExpr]
+              ) [PrintStmt]
+            ) [MatchedStmt]
+          ) [Statements]
+          MatchedStmt(
+            ErrorStmt(
+            ) [ErrorStmt]
+          ) [MatchedStmt]
+        ) [Statements]
+        MatchedStmt(
+          PrintStmt(
+            TermExpr(
+              Term(
+                Const(
+                 2
+                ) [Const]
+              ) [Term]
+            ) [TermExpr]
+          ) [PrintStmt]
+        ) [MatchedStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  16:31:00,040 - ===================================
+INFO  16:31:00,041 - Prepoznata naredba print!
+INFO  16:31:00,041 - Prepoznata naredba print!
+INFO  16:31:00,041 - Print count calls = 2
+INFO  16:31:00,041 - VarDecl count = 2

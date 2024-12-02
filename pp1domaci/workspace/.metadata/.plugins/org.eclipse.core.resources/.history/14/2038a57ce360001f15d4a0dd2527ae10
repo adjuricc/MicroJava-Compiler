@@ -1,0 +1,13 @@
+// Test301
+
+program test301
+    int x;
+    int y; // int x, y; pokazuje broj varova da je 1 ??
+{
+    void main()    
+    {		
+    	print(1);
+    	print(2);
+    	print(3);
+    }
+}

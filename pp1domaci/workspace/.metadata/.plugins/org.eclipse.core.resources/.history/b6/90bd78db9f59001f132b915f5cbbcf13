@@ -1,0 +1,19 @@
+program p
+namespace sizes{
+	const int tableSize = 10;
+	{}
+}
+class Table {
+	int pos[], neg[], factor;
+	static int id;
+	static{
+		id = 0;
+	}
+	{
+		void setfactor(int factor) {this.factor = factor;}
+		void putp (int a, int idx) { this.pos[idx] = a; }
+		 void putn (int a, int idx) { this.neg[idx] = a; }
+		 int getp (int idx) { return pos[idx]; }
+		 int getn (int idx) { return neg[idx]; }
+	}
+}

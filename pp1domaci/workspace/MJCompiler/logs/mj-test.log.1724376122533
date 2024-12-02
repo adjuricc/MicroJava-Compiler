@@ -1,0 +1,162 @@
+INFO  03:21:03,936 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  03:21:03,952 - #2 program
+INFO  03:21:03,952 - #37 test301
+INFO  03:21:03,952 - #37 int
+INFO  03:21:03,953 - #37 a
+INFO  03:21:03,954 - #5 ;
+INFO  03:21:03,955 - #3 {
+INFO  03:21:03,956 - #13 void
+INFO  03:21:03,956 - #14 main
+INFO  03:21:03,956 - #6 (
+INFO  03:21:03,957 - #7 )
+INFO  03:21:03,957 - #37 int
+INFO  03:21:03,957 - #37 bodovi
+INFO  03:21:03,957 - #5 ;
+INFO  03:21:03,957 - #37 bool
+INFO  03:21:03,957 - #37 bt
+INFO  03:21:03,957 - #5 ;
+INFO  03:21:03,957 - #3 {
+INFO  03:21:03,957 - #37 bodovi
+INFO  03:21:03,958 - #32 =
+INFO  03:21:03,959 - #36 0
+INFO  03:21:03,959 - #5 ;
+INFO  03:21:03,959 - #37 bodovi
+INFO  03:21:03,960 - #32 =
+INFO  03:21:03,960 - #37 bodovi
+INFO  03:21:03,960 - #9 +
+INFO  03:21:03,960 - #36 2
+INFO  03:21:03,960 - #5 ;
+INFO  03:21:03,960 - #4 }
+INFO  03:21:03,961 - #4 }
+INFO  03:21:03,971 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoConstDecl(
+  ) [NoConstDecl]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarListOne(
+        VarType(
+         a
+          VarNoArray(
+          ) [VarNoArray]
+        ) [VarType]
+      ) [VarListOne]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MainMethod(
+      ) [MainMethod]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarListOne(
+              VarType(
+               bodovi
+                VarNoArray(
+                ) [VarNoArray]
+              ) [VarType]
+            ) [VarListOne]
+          ) [VarDecl]
+        ) [VarDeclarations]
+        VarDecl(
+          Type(
+           bool
+          ) [Type]
+          VarListOne(
+            VarType(
+             bt
+              VarNoArray(
+              ) [VarNoArray]
+            ) [VarType]
+          ) [VarListOne]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          Assignment(
+            Designator(
+             bodovi
+              DesignatorNoPart(
+              ) [DesignatorNoPart]
+            ) [Designator]
+            TermExpr(
+              CommonTerm(
+                Const(
+                 0
+                ) [Const]
+              ) [CommonTerm]
+            ) [TermExpr]
+          ) [Assignment]
+        ) [Statements]
+        Assignment(
+          Designator(
+           bodovi
+            DesignatorNoPart(
+            ) [DesignatorNoPart]
+          ) [Designator]
+          AddExpr(
+            TermExpr(
+              CommonTerm(
+                Var(
+                  Designator(
+                   bodovi
+                    DesignatorNoPart(
+                    ) [DesignatorNoPart]
+                  ) [Designator]
+                ) [Var]
+              ) [CommonTerm]
+            ) [TermExpr]
+            AddopPlus(
+            ) [AddopPlus]
+            CommonTerm(
+              Const(
+               2
+              ) [Const]
+            ) [CommonTerm]
+          ) [AddExpr]
+        ) [Assignment]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  03:21:03,971 - ===================================
+INFO  03:21:03,972 - Obradjuje se funkija main
+INFO  03:21:03,973 - TermExpr(
+  CommonTerm(
+    Var(
+      Designator(
+       bodovi
+        DesignatorNoPart(
+        ) [DesignatorNoPart]
+      ) [Designator]
+    ) [Var]
+  ) [CommonTerm]
+) [TermExpr]
+INFO  03:21:03,973 - CommonTerm(
+  Const(
+   2
+  ) [Const]
+) [CommonTerm]
+INFO  03:21:03,973 - 1
+INFO  03:21:03,973 - 1
+INFO  03:21:03,973 - Print count calls = 0
+INFO  03:21:03,973 - VarDecl count = 3
+INFO  03:21:03,973 - ===================================
+INFO  03:21:03,981 - Parsiranje uspesno zavrseno!

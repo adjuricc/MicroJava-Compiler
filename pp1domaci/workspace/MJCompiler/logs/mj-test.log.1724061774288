@@ -1,0 +1,11 @@
+INFO  12:00:38,494 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  12:00:38,503 - #2 program
+INFO  12:00:38,504 - #34 MJProgram
+INFO  12:00:38,504 - #34 int
+INFO  12:00:38,504 - #34 x
+INFO  12:00:38,505 - #5 ;
+INFO  12:00:38,505 - #34 x
+INFO  12:00:38,505 - #29 =
+ERROR 12:00:38,505 - 
+Sintaksna greska na liniji 4, value: =
+ERROR 12:00:38,505 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 4, value: =

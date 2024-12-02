@@ -1,0 +1,112 @@
+INFO  02:10:49,624 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  02:10:49,641 - #2 program
+INFO  02:10:49,641 - #37 test301
+INFO  02:10:49,641 - #3 {
+INFO  02:10:49,642 - #13 void
+INFO  02:10:49,643 - #14 main
+INFO  02:10:49,643 - #6 (
+INFO  02:10:49,644 - #7 )
+INFO  02:10:49,644 - #37 int
+INFO  02:10:49,644 - #37 x
+INFO  02:10:49,644 - #10 ,
+INFO  02:10:49,646 - #37 y
+INFO  02:10:49,646 - #5 ;
+INFO  02:10:49,646 - #3 {
+INFO  02:10:49,647 - #11 print
+INFO  02:10:49,647 - #6 (
+INFO  02:10:49,647 - #36 1
+INFO  02:10:49,647 - #7 )
+INFO  02:10:49,647 - #5 ;
+INFO  02:10:49,647 - #11 print
+INFO  02:10:49,648 - #6 (
+INFO  02:10:49,648 - #36 2
+INFO  02:10:49,648 - #7 )
+INFO  02:10:49,648 - #5 ;
+INFO  02:10:49,648 - #11 print
+INFO  02:10:49,648 - #6 (
+INFO  02:10:49,648 - #36 3
+INFO  02:10:49,648 - #7 )
+INFO  02:10:49,648 - #5 ;
+INFO  02:10:49,648 - #4 }
+INFO  02:10:49,648 - #4 }
+INFO  02:10:49,654 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoConstDecl(
+  ) [NoConstDecl]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MainMethod(
+      ) [MainMethod]
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          VarListMany(
+            VarListOne(
+              VarType(
+               x
+                VarNoArray(
+                ) [VarNoArray]
+              ) [VarType]
+            ) [VarListOne]
+            VarType(
+             y
+              VarNoArray(
+              ) [VarNoArray]
+            ) [VarType]
+          ) [VarListMany]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        Statements(
+          Statements(
+            NoStmt(
+            ) [NoStmt]
+            PrintStmt(
+              TermExpr(
+                CommonTerm(
+                  Const(
+                   1
+                  ) [Const]
+                ) [CommonTerm]
+              ) [TermExpr]
+            ) [PrintStmt]
+          ) [Statements]
+          PrintStmt(
+            TermExpr(
+              CommonTerm(
+                Const(
+                 2
+                ) [Const]
+              ) [CommonTerm]
+            ) [TermExpr]
+          ) [PrintStmt]
+        ) [Statements]
+        PrintStmt(
+          TermExpr(
+            CommonTerm(
+              Const(
+               3
+              ) [Const]
+            ) [CommonTerm]
+          ) [TermExpr]
+        ) [PrintStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  02:10:49,654 - ===================================
+INFO  02:10:49,656 - Obradjuje se funkija main
+INFO  02:10:49,656 - Print count calls = 0
+INFO  02:10:49,656 - VarDecl count = 2
+INFO  02:10:49,656 - ===================================
+INFO  02:10:49,664 - Parsiranje uspesno zavrseno!

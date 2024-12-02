@@ -1,0 +1,59 @@
+INFO  16:13:30,768 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  16:13:30,783 - #2 program
+INFO  16:13:30,783 - #37 EqualDeclaration
+INFO  16:13:30,783 - #37 int
+INFO  16:13:30,786 - #37 mat
+INFO  16:13:30,787 - #15 [
+INFO  16:13:30,787 - #16 ]
+INFO  16:13:30,787 - #15 [
+INFO  16:13:30,787 - #16 ]
+INFO  16:13:30,787 - #5 ;
+INFO  16:13:30,788 - #3 {
+INFO  16:13:30,788 - #13 void
+INFO  16:13:30,789 - #14 main
+INFO  16:13:30,789 - #6 (
+INFO  16:13:30,789 - #7 )
+INFO  16:13:30,789 - #3 {
+INFO  16:13:30,789 - #4 }
+INFO  16:13:30,790 - #4 }
+INFO  16:13:30,797 - Program(
+  ProgName(
+   EqualDeclaration
+  ) [ProgName]
+  NoConstDecl(
+  ) [NoConstDecl]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarListOne(
+        VarType(
+         mat
+          VarMatrix(
+          ) [VarMatrix]
+        ) [VarType]
+      ) [VarListOne]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MainMethod(
+      ) [MainMethod]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  16:13:30,797 - ===================================
+INFO  16:13:30,799 - Obradjuje se funkija main
+INFO  16:13:30,799 - Print count calls = 0
+INFO  16:13:30,799 - VarDecl count = 1
+INFO  16:13:30,799 - ===================================
+INFO  16:13:30,806 - Parsiranje uspesno zavrseno!

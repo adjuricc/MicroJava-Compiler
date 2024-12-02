@@ -1,0 +1,24 @@
+// Test301
+
+program test301
+	const int nula = 0;
+	const int jedan = 1;
+	const int pet = 5;
+	
+	int niz[];
+	int niz2[];
+	
+	int a;
+{
+    void main() 
+    	int bodovi;
+    	bool bt;
+    {	
+		niz = new int[3];
+		niz[nula] = jedan;
+		niz[1] = 2;
+		bodovi = niz[2]/niz[0];
+		print(bodovi);
+		print(niz[2]);
+    }
+}

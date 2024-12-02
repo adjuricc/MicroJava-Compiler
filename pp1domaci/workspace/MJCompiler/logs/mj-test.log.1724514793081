@@ -1,0 +1,102 @@
+INFO  17:50:18,678 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  17:50:18,703 - #2 program
+INFO  17:50:18,704 - #37 EqualDeclaration
+INFO  17:50:18,704 - #37 int
+INFO  17:50:18,705 - #37 mat
+INFO  17:50:18,706 - #15 [
+INFO  17:50:18,706 - #16 ]
+INFO  17:50:18,706 - #15 [
+INFO  17:50:18,706 - #16 ]
+INFO  17:50:18,706 - #5 ;
+INFO  17:50:18,710 - #3 {
+INFO  17:50:18,711 - #13 void
+INFO  17:50:18,711 - #14 main
+INFO  17:50:18,711 - #6 (
+INFO  17:50:18,711 - #7 )
+INFO  17:50:18,711 - #3 {
+INFO  17:50:18,711 - #37 mat
+INFO  17:50:18,712 - #32 =
+INFO  17:50:18,712 - #17 new
+INFO  17:50:18,712 - #37 int
+INFO  17:50:18,712 - #15 [
+INFO  17:50:18,712 - #36 2
+INFO  17:50:18,714 - #16 ]
+INFO  17:50:18,714 - #15 [
+INFO  17:50:18,714 - #36 3
+INFO  17:50:18,714 - #16 ]
+INFO  17:50:18,714 - #5 ;
+INFO  17:50:18,714 - #4 }
+INFO  17:50:18,714 - #4 }
+INFO  17:50:18,726 - Program(
+  ProgName(
+   EqualDeclaration
+  ) [ProgName]
+  NoConstDecl(
+  ) [NoConstDecl]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarListOne(
+        VarType(
+         mat
+          VarMatrix(
+          ) [VarMatrix]
+        ) [VarType]
+      ) [VarListOne]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MainMethod(
+      ) [MainMethod]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        Assignment(
+          Designator(
+           mat
+            DesignatorNoPart(
+            ) [DesignatorNoPart]
+          ) [Designator]
+          TermExpr(
+            CommonTerm(
+              NewFactorMatrix(
+                Type(
+                 int
+                ) [Type]
+                TermExpr(
+                  CommonTerm(
+                    Const(
+                     2
+                    ) [Const]
+                  ) [CommonTerm]
+                ) [TermExpr]
+                TermExpr(
+                  CommonTerm(
+                    Const(
+                     3
+                    ) [Const]
+                  ) [CommonTerm]
+                ) [TermExpr]
+              ) [NewFactorMatrix]
+            ) [CommonTerm]
+          ) [TermExpr]
+        ) [Assignment]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  17:50:18,726 - ===================================
+INFO  17:50:18,728 - Obradjuje se funkija main
+INFO  17:50:18,728 - Print count calls = 0
+INFO  17:50:18,728 - VarDecl count = 1
+INFO  17:50:18,728 - ===================================
+INFO  17:50:18,737 - Parsiranje uspesno zavrseno!

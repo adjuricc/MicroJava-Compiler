@@ -1,0 +1,352 @@
+INFO  17:04:38,152 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  17:04:38,168 - #2 program
+INFO  17:04:38,168 - #34 test301
+INFO  17:04:38,168 - #32 const
+INFO  17:04:38,169 - #34 int
+INFO  17:04:38,169 - #34 nula
+INFO  17:04:38,170 - #29 =
+INFO  17:04:38,170 - #33 0
+INFO  17:04:38,170 - #5 ;
+INFO  17:04:38,171 - #32 const
+INFO  17:04:38,171 - #34 int
+INFO  17:04:38,171 - #34 jedan
+INFO  17:04:38,171 - #29 =
+INFO  17:04:38,171 - #33 1
+INFO  17:04:38,171 - #5 ;
+INFO  17:04:38,171 - #32 const
+INFO  17:04:38,172 - #34 int
+INFO  17:04:38,172 - #34 pet
+INFO  17:04:38,172 - #29 =
+INFO  17:04:38,172 - #33 5
+INFO  17:04:38,172 - #5 ;
+INFO  17:04:38,172 - #34 int
+INFO  17:04:38,180 - #34 niz
+INFO  17:04:38,180 - #13 [
+INFO  17:04:38,180 - #14 ]
+INFO  17:04:38,180 - #5 ;
+INFO  17:04:38,180 - #34 char
+INFO  17:04:38,182 - #34 nizch
+INFO  17:04:38,182 - #13 [
+INFO  17:04:38,182 - #14 ]
+INFO  17:04:38,182 - #5 ;
+INFO  17:04:38,182 - #34 int
+INFO  17:04:38,182 - #34 a
+INFO  17:04:38,182 - #5 ;
+INFO  17:04:38,182 - #3 {
+INFO  17:04:38,182 - #34 int
+INFO  17:04:38,183 - #34 main
+INFO  17:04:38,183 - #6 (
+INFO  17:04:38,183 - #7 )
+INFO  17:04:38,183 - #3 {
+INFO  17:04:38,183 - #34 bodovi
+INFO  17:04:38,183 - #29 =
+INFO  17:04:38,183 - #33 0
+INFO  17:04:38,183 - #5 ;
+INFO  17:04:38,184 - #34 bodovi
+INFO  17:04:38,184 - #19 ++
+INFO  17:04:38,184 - #5 ;
+INFO  17:04:38,184 - #34 bodovi
+INFO  17:04:38,184 - #29 =
+INFO  17:04:38,184 - #34 bodovi
+INFO  17:04:38,184 - #9 +
+INFO  17:04:38,184 - #34 jedan
+INFO  17:04:38,185 - #5 ;
+INFO  17:04:38,186 - #34 bodovi
+INFO  17:04:38,186 - #29 =
+INFO  17:04:38,186 - #34 bodovi
+INFO  17:04:38,186 - #16 *
+ERROR 17:04:38,186 - 
+Sintaksna greska na liniji 20, value: *
+INFO  17:04:38,186 - #34 pet
+INFO  17:04:38,186 - #5 ;
+INFO  17:04:38,186 - #34 bodovi
+INFO  17:04:38,186 - #20 --
+INFO  17:04:38,186 - #5 ;
+ERROR 17:04:38,186 - Izvrsen oporavak do ; u liniji 20
+INFO  17:04:38,187 - #11 print
+INFO  17:04:38,187 - #6 (
+INFO  17:04:38,187 - #34 bodovi
+INFO  17:04:38,187 - #7 )
+INFO  17:04:38,187 - #5 ;
+INFO  17:04:38,187 - #11 print
+INFO  17:04:38,187 - #6 (
+INFO  17:04:38,189 - #34 bodovi
+INFO  17:04:38,189 - #7 )
+INFO  17:04:38,190 - #5 ;
+INFO  17:04:38,190 - #34 a
+INFO  17:04:38,190 - #29 =
+INFO  17:04:38,190 - #33 1
+INFO  17:04:38,190 - #5 ;
+INFO  17:04:38,190 - #34 read
+INFO  17:04:38,190 - #6 (
+ERROR 17:04:38,190 - 
+Sintaksna greska na liniji 27, value: (
+INFO  17:04:38,190 - #34 bodovi
+INFO  17:04:38,190 - #7 )
+INFO  17:04:38,190 - #5 ;
+INFO  17:04:38,190 - #34 bodovi
+INFO  17:04:38,190 - #29 =
+INFO  17:04:38,190 - #15 -
+ERROR 17:04:38,190 - Izvrsen oporavak do ; u liniji 27
+ERROR 17:04:38,190 - 
+Sintaksna greska na liniji 28, value: -
+INFO  17:04:38,190 - #34 bodovi
+INFO  17:04:38,190 - #9 +
+INFO  17:04:38,190 - #6 (
+INFO  17:04:38,190 - #34 pet
+INFO  17:04:38,190 - #16 *
+INFO  17:04:38,190 - #34 a
+INFO  17:04:38,190 - #17 /
+INFO  17:04:38,190 - #33 2
+INFO  17:04:38,190 - #15 -
+INFO  17:04:38,190 - #34 jedan
+INFO  17:04:38,191 - #7 )
+INFO  17:04:38,191 - #16 *
+INFO  17:04:38,191 - #34 bodovi
+INFO  17:04:38,191 - #15 -
+INFO  17:04:38,191 - #6 (
+INFO  17:04:38,191 - #33 3
+INFO  17:04:38,191 - #18 %
+INFO  17:04:38,191 - #33 2
+INFO  17:04:38,191 - #9 +
+INFO  17:04:38,191 - #33 3
+INFO  17:04:38,191 - #16 *
+INFO  17:04:38,191 - #33 2
+INFO  17:04:38,191 - #15 -
+INFO  17:04:38,191 - #33 3
+INFO  17:04:38,191 - #7 )
+INFO  17:04:38,191 - #5 ;
+INFO  17:04:38,191 - #11 print
+INFO  17:04:38,191 - #6 (
+INFO  17:04:38,191 - #34 bodovi
+ERROR 17:04:38,191 - Izvrsen oporavak do ; u liniji 28
+INFO  17:04:38,191 - #7 )
+INFO  17:04:38,191 - #5 ;
+INFO  17:04:38,192 - #4 }
+INFO  17:04:38,192 - #4 }
+INFO  17:04:38,194 - Program(
+ test301
+  ConstDeclarations(
+    ConstDeclarations(
+      ConstDeclarations(
+        NoConstDecl(
+        ) [NoConstDecl]
+        ConstDecl(
+          Type(
+           int
+          ) [Type]
+          ConstListOne(
+            ConstDef(
+             nula
+              ConstNumber(
+               0
+              ) [ConstNumber]
+            ) [ConstDef]
+          ) [ConstListOne]
+        ) [ConstDecl]
+      ) [ConstDeclarations]
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        ConstListOne(
+          ConstDef(
+           jedan
+            ConstNumber(
+             1
+            ) [ConstNumber]
+          ) [ConstDef]
+        ) [ConstListOne]
+      ) [ConstDecl]
+    ) [ConstDeclarations]
+    ConstDecl(
+      Type(
+       int
+      ) [Type]
+      ConstListOne(
+        ConstDef(
+         pet
+          ConstNumber(
+           5
+          ) [ConstNumber]
+        ) [ConstDef]
+      ) [ConstListOne]
+    ) [ConstDecl]
+  ) [ConstDeclarations]
+  VarDeclarations(
+    VarDeclarations(
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          VarListOne(
+            VarTypeArray(
+             niz
+            ) [VarTypeArray]
+          ) [VarListOne]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      VarDecl(
+        Type(
+         char
+        ) [Type]
+        VarListOne(
+          VarTypeArray(
+           nizch
+          ) [VarTypeArray]
+        ) [VarListOne]
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarListOne(
+        VarTypeIdent(
+         a
+        ) [VarTypeIdent]
+      ) [VarListOne]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                Statements(
+                  Statements(
+                    Statements(
+                      Statements(
+                        Statements(
+                          Statements(
+                            NoStmt(
+                            ) [NoStmt]
+                            Assignment(
+                              Designator(
+                               bodovi
+                              ) [Designator]
+                              TermExpr(
+                                Term(
+                                  Const(
+                                   0
+                                  ) [Const]
+                                ) [Term]
+                              ) [TermExpr]
+                            ) [Assignment]
+                          ) [Statements]
+                          PlusPlusStmt(
+                            Designator(
+                             bodovi
+                            ) [Designator]
+                          ) [PlusPlusStmt]
+                        ) [Statements]
+                        Assignment(
+                          Designator(
+                           bodovi
+                          ) [Designator]
+                          AddExpr(
+                            TermExpr(
+                              Term(
+                                Var(
+                                  Designator(
+                                   bodovi
+                                  ) [Designator]
+                                ) [Var]
+                              ) [Term]
+                            ) [TermExpr]
+                            AddopPlus(
+                            ) [AddopPlus]
+                            Term(
+                              Var(
+                                Designator(
+                                 jedan
+                                ) [Designator]
+                              ) [Var]
+                            ) [Term]
+                          ) [AddExpr]
+                        ) [Assignment]
+                      ) [Statements]
+                      ErrorStmt(
+                      ) [ErrorStmt]
+                    ) [Statements]
+                    MinusMinusStmt(
+                      Designator(
+                       bodovi
+                      ) [Designator]
+                    ) [MinusMinusStmt]
+                  ) [Statements]
+                  PrintStmt(
+                    TermExpr(
+                      Term(
+                        Var(
+                          Designator(
+                           bodovi
+                          ) [Designator]
+                        ) [Var]
+                      ) [Term]
+                    ) [TermExpr]
+                  ) [PrintStmt]
+                ) [Statements]
+                PrintStmt(
+                  TermExpr(
+                    Term(
+                      Var(
+                        Designator(
+                         bodovi
+                        ) [Designator]
+                      ) [Var]
+                    ) [Term]
+                  ) [TermExpr]
+                ) [PrintStmt]
+              ) [Statements]
+              Assignment(
+                Designator(
+                 a
+                ) [Designator]
+                TermExpr(
+                  Term(
+                    Const(
+                     1
+                    ) [Const]
+                  ) [Term]
+                ) [TermExpr]
+              ) [Assignment]
+            ) [Statements]
+            ErrorStmt(
+            ) [ErrorStmt]
+          ) [Statements]
+          ErrorStmt(
+          ) [ErrorStmt]
+        ) [Statements]
+        PrintStmt(
+          TermExpr(
+            Term(
+              Var(
+                Designator(
+                 bodovi
+                ) [Designator]
+              ) [Var]
+            ) [Term]
+          ) [TermExpr]
+        ) [PrintStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  17:04:38,194 - ===================================
+INFO  17:04:38,197 - Prepoznata naredba print!
+INFO  17:04:38,197 - Prepoznata naredba print!
+INFO  17:04:38,197 - Prepoznata naredba print!
+INFO  17:04:38,197 - Print count calls = 3
+INFO  17:04:38,198 - VarDecl count = 3

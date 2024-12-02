@@ -1,0 +1,45 @@
+INFO  15:13:32,111 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  15:13:32,132 - #2 program
+INFO  15:13:32,132 - #34 MJProgram
+INFO  15:13:32,133 - #3 {
+INFO  15:13:32,133 - #34 int
+INFO  15:13:32,134 - #34 main
+INFO  15:13:32,135 - #6 (
+INFO  15:13:32,135 - #7 )
+INFO  15:13:32,135 - #3 {
+INFO  15:13:32,135 - #34 int
+INFO  15:13:32,135 - #34 x
+ERROR 15:13:32,135 - 
+Sintaksna greska na liniji 4, value: x
+INFO  15:13:32,135 - #10 ,
+INFO  15:13:32,135 - #34 y
+INFO  15:13:32,135 - #5 ;
+INFO  15:13:32,136 - #4 }
+INFO  15:13:32,136 - #4 }
+ERROR 15:13:32,136 - Izvrsen oporavak do ; u liniji 4
+INFO  15:13:32,137 - Program(
+ MJProgram
+  NoConstDecl(
+  ) [NoConstDecl]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        ErrorStmt(
+        ) [ErrorStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  15:13:32,139 - ===================================
+INFO  15:13:32,139 - Print count calls = 0
+INFO  15:13:32,139 - VarDecl count = 0

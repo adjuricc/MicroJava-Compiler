@@ -1,0 +1,104 @@
+INFO  15:14:27,829 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  15:14:27,843 - #2 program
+INFO  15:14:27,843 - #34 MJProgram
+INFO  15:14:27,843 - #34 int
+INFO  15:14:27,844 - #34 x
+INFO  15:14:27,845 - #10 ,
+INFO  15:14:27,845 - #34 y
+INFO  15:14:27,845 - #5 ;
+INFO  15:14:27,846 - #3 {
+INFO  15:14:27,847 - #34 int
+INFO  15:14:27,847 - #34 main
+INFO  15:14:27,847 - #6 (
+INFO  15:14:27,847 - #7 )
+INFO  15:14:27,847 - #3 {
+INFO  15:14:27,848 - #34 y
+INFO  15:14:27,848 - #29 =
+INFO  15:14:27,849 - #33 3
+INFO  15:14:27,849 - #5 ;
+INFO  15:14:27,849 - #34 x
+INFO  15:14:27,849 - #29 =
+INFO  15:14:27,851 - #34 y
+INFO  15:14:27,851 - #9 +
+INFO  15:14:27,851 - #33 5
+INFO  15:14:27,852 - #5 ;
+INFO  15:14:27,852 - #4 }
+INFO  15:14:27,852 - #4 }
+INFO  15:14:27,854 - Program(
+ MJProgram
+  NoConstDecl(
+  ) [NoConstDecl]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarListMany(
+        VarListOne(
+          VarTypeIdent(
+           x
+          ) [VarTypeIdent]
+        ) [VarListOne]
+        VarTypeIdent(
+         y
+        ) [VarTypeIdent]
+      ) [VarListMany]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      Statements(
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          Assignment(
+            Designator(
+             y
+            ) [Designator]
+            TermExpr(
+              Term(
+                Const(
+                 3
+                ) [Const]
+              ) [Term]
+            ) [TermExpr]
+          ) [Assignment]
+        ) [Statements]
+        Assignment(
+          Designator(
+           x
+          ) [Designator]
+          AddExpr(
+            TermExpr(
+              Term(
+                Var(
+                  Designator(
+                   y
+                  ) [Designator]
+                ) [Var]
+              ) [Term]
+            ) [TermExpr]
+            AddopPlus(
+            ) [AddopPlus]
+            Term(
+              Const(
+               5
+              ) [Const]
+            ) [Term]
+          ) [AddExpr]
+        ) [Assignment]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  15:14:27,855 - ===================================
+INFO  15:14:27,856 - Print count calls = 0
+INFO  15:14:27,856 - VarDecl count = 1

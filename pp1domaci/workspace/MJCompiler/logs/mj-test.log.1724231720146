@@ -1,0 +1,40 @@
+INFO  11:13:32,886 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  11:13:32,906 - #2 program
+INFO  11:13:32,906 - #35 test301
+INFO  11:13:32,906 - #33 const
+INFO  11:13:32,907 - #35 int
+INFO  11:13:32,907 - #35 nula
+INFO  11:13:32,909 - #30 =
+INFO  11:13:32,909 - #34 0
+INFO  11:13:32,909 - #5 ;
+INFO  11:13:32,910 - #33 const
+INFO  11:13:32,910 - #35 int
+INFO  11:13:32,910 - #35 jedan
+INFO  11:13:32,910 - #30 =
+INFO  11:13:32,910 - #34 1
+INFO  11:13:32,910 - #5 ;
+INFO  11:13:32,910 - #33 const
+INFO  11:13:32,910 - #35 int
+INFO  11:13:32,910 - #35 pet
+INFO  11:13:32,910 - #30 =
+INFO  11:13:32,910 - #34 5
+INFO  11:13:32,910 - #5 ;
+INFO  11:13:32,910 - #35 int
+INFO  11:13:32,919 - #35 niz
+INFO  11:13:32,919 - #14 [
+INFO  11:13:32,919 - #15 ]
+INFO  11:13:32,919 - #5 ;
+INFO  11:13:32,920 - #35 char
+INFO  11:13:32,920 - #35 nizch
+INFO  11:13:32,920 - #14 [
+INFO  11:13:32,920 - #15 ]
+INFO  11:13:32,920 - #5 ;
+INFO  11:13:32,920 - #35 int
+INFO  11:13:32,920 - #35 a
+INFO  11:13:32,920 - #5 ;
+INFO  11:13:32,921 - #3 {
+INFO  11:13:32,921 - #12 void
+INFO  11:13:32,921 - #35 main
+ERROR 11:13:32,921 - 
+Sintaksna greska na liniji 15, value: main
+ERROR 11:13:32,921 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 15, value: main

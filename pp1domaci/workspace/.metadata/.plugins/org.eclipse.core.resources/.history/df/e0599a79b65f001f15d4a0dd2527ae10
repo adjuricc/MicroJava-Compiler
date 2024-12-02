@@ -1,0 +1,48 @@
+package rs.ac.bg.etf.pp1;
+
+import org.apache.log4j.Logger;
+
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.etf.pp1.symboltable.*;
+import rs.etf.pp1.symboltable.concepts.*;
+
+public class SemanticPass extends VisitorAdaptor {
+	int printCallCount = 0;
+	int varDeclCnt = 0;
+	boolean errorDetected = false;
+	Logger log = Logger.getLogger(getClass());
+	
+	public void visit(PrintStmt PrintStmt) { 
+		printCallCount++;
+		log.info("Prepoznata naredba print!");
+	}
+	
+	public void visit(VarDecl vardecl) { 
+		varDeclCnt++;
+		VarList vardecl_list = vardecl.getVarList();
+		
+		if(vardecl_list instanceof VarListOne){
+			VarType var_type = ((VarListOne) vardecl_list).getVarType();
+			VarArrayOpt var_array_opt = var_type.getVarArrayOpt();
+			
+			if(var_array_opt instanceof VarNoArray) {
+				Obj var_node = Tab.insert(Obj.Var, var_type.getName(), vardecl.getType().struct);
+			}
+		}
+			
+	}
+	
+	public void visit(ProgName progName) {
+		progName.obj = Tab.insert(Obj.Prog, progName.getProgName(), Tab.noType);
+		Tab.openScope();
+	}
+	
+	public void visit(Program program) {
+		Tab.chainLocalSymbols(program.getProgName().obj);
+		Tab.closeScope();
+	}
+	
+	public boolean passed(){
+        return !errorDetected;
+    }
+}

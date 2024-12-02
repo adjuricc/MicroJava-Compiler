@@ -1,0 +1,142 @@
+INFO  01:10:25,637 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  01:10:25,655 - #2 program
+INFO  01:10:25,655 - #37 EqualDeclaration
+INFO  01:10:25,656 - #37 int
+INFO  01:10:25,657 - #37 mat
+INFO  01:10:25,657 - #15 [
+INFO  01:10:25,658 - #16 ]
+INFO  01:10:25,658 - #15 [
+INFO  01:10:25,658 - #16 ]
+INFO  01:10:25,658 - #5 ;
+INFO  01:10:25,659 - #3 {
+INFO  01:10:25,659 - #13 void
+INFO  01:10:25,659 - #14 main
+INFO  01:10:25,659 - #6 (
+INFO  01:10:25,659 - #7 )
+INFO  01:10:25,659 - #3 {
+INFO  01:10:25,659 - #37 mat
+INFO  01:10:25,660 - #32 =
+INFO  01:10:25,660 - #17 new
+INFO  01:10:25,660 - #37 int
+INFO  01:10:25,660 - #15 [
+INFO  01:10:25,660 - #36 2
+INFO  01:10:25,660 - #16 ]
+INFO  01:10:25,662 - #15 [
+INFO  01:10:25,662 - #36 3
+INFO  01:10:25,662 - #16 ]
+INFO  01:10:25,662 - #5 ;
+INFO  01:10:25,662 - #37 mat
+INFO  01:10:25,662 - #15 [
+INFO  01:10:25,662 - #36 0
+INFO  01:10:25,662 - #16 ]
+INFO  01:10:25,662 - #15 [
+INFO  01:10:25,662 - #36 0
+INFO  01:10:25,662 - #16 ]
+INFO  01:10:25,662 - #32 =
+INFO  01:10:25,663 - #36 1
+INFO  01:10:25,663 - #5 ;
+INFO  01:10:25,663 - #4 }
+INFO  01:10:25,663 - #4 }
+INFO  01:10:25,671 - Program(
+  ProgName(
+   EqualDeclaration
+  ) [ProgName]
+  NoConstDecl(
+  ) [NoConstDecl]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarListOne(
+        VarType(
+         mat
+          VarMatrix(
+          ) [VarMatrix]
+        ) [VarType]
+      ) [VarListOne]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MainMethod(
+      ) [MainMethod]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          Assignment(
+            Designator(
+             mat
+              DesignatorNoPart(
+              ) [DesignatorNoPart]
+            ) [Designator]
+            TermExpr(
+              CommonTerm(
+                NewFactorMatrix(
+                  Type(
+                   int
+                  ) [Type]
+                  TermExpr(
+                    CommonTerm(
+                      Const(
+                       2
+                      ) [Const]
+                    ) [CommonTerm]
+                  ) [TermExpr]
+                  TermExpr(
+                    CommonTerm(
+                      Const(
+                       3
+                      ) [Const]
+                    ) [CommonTerm]
+                  ) [TermExpr]
+                ) [NewFactorMatrix]
+              ) [CommonTerm]
+            ) [TermExpr]
+          ) [Assignment]
+        ) [Statements]
+        Assignment(
+          Designator(
+           mat
+            DesignatorMatrix(
+              TermExpr(
+                CommonTerm(
+                  Const(
+                   0
+                  ) [Const]
+                ) [CommonTerm]
+              ) [TermExpr]
+              TermExpr(
+                CommonTerm(
+                  Const(
+                   0
+                  ) [Const]
+                ) [CommonTerm]
+              ) [TermExpr]
+            ) [DesignatorMatrix]
+          ) [Designator]
+          TermExpr(
+            CommonTerm(
+              Const(
+               1
+              ) [Const]
+            ) [CommonTerm]
+          ) [TermExpr]
+        ) [Assignment]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  01:10:25,671 - ===================================
+INFO  01:10:25,673 - Obradjuje se funkija main
+INFO  01:10:25,673 - Print count calls = 0
+INFO  01:10:25,673 - VarDecl count = 1
+INFO  01:10:25,673 - ===================================
+INFO  01:10:25,681 - Parsiranje uspesno zavrseno!

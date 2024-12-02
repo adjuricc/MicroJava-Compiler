@@ -1,0 +1,155 @@
+INFO  02:11:39,665 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  02:11:39,681 - #2 program
+INFO  02:11:39,681 - #37 test301
+INFO  02:11:39,681 - #37 int
+INFO  02:11:39,683 - #37 a
+INFO  02:11:39,683 - #10 ,
+INFO  02:11:39,684 - #37 b
+INFO  02:11:39,684 - #5 ;
+INFO  02:11:39,685 - #3 {
+INFO  02:11:39,685 - #13 void
+INFO  02:11:39,685 - #14 main
+INFO  02:11:39,686 - #6 (
+INFO  02:11:39,686 - #7 )
+INFO  02:11:39,686 - #37 int
+INFO  02:11:39,686 - #37 x
+INFO  02:11:39,686 - #10 ,
+INFO  02:11:39,686 - #37 y
+INFO  02:11:39,686 - #5 ;
+INFO  02:11:39,686 - #37 int
+INFO  02:11:39,686 - #37 z
+INFO  02:11:39,686 - #5 ;
+INFO  02:11:39,686 - #3 {
+INFO  02:11:39,687 - #11 print
+INFO  02:11:39,687 - #6 (
+INFO  02:11:39,687 - #36 1
+INFO  02:11:39,687 - #7 )
+INFO  02:11:39,688 - #5 ;
+INFO  02:11:39,688 - #11 print
+INFO  02:11:39,688 - #6 (
+INFO  02:11:39,688 - #36 2
+INFO  02:11:39,688 - #7 )
+INFO  02:11:39,688 - #5 ;
+INFO  02:11:39,688 - #11 print
+INFO  02:11:39,688 - #6 (
+INFO  02:11:39,688 - #36 3
+INFO  02:11:39,688 - #7 )
+INFO  02:11:39,688 - #5 ;
+INFO  02:11:39,688 - #4 }
+INFO  02:11:39,688 - #4 }
+INFO  02:11:39,695 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoConstDecl(
+  ) [NoConstDecl]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarListMany(
+        VarListOne(
+          VarType(
+           a
+            VarNoArray(
+            ) [VarNoArray]
+          ) [VarType]
+        ) [VarListOne]
+        VarType(
+         b
+          VarNoArray(
+          ) [VarNoArray]
+        ) [VarType]
+      ) [VarListMany]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MainMethod(
+      ) [MainMethod]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarListMany(
+              VarListOne(
+                VarType(
+                 x
+                  VarNoArray(
+                  ) [VarNoArray]
+                ) [VarType]
+              ) [VarListOne]
+              VarType(
+               y
+                VarNoArray(
+                ) [VarNoArray]
+              ) [VarType]
+            ) [VarListMany]
+          ) [VarDecl]
+        ) [VarDeclarations]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          VarListOne(
+            VarType(
+             z
+              VarNoArray(
+              ) [VarNoArray]
+            ) [VarType]
+          ) [VarListOne]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        Statements(
+          Statements(
+            NoStmt(
+            ) [NoStmt]
+            PrintStmt(
+              TermExpr(
+                CommonTerm(
+                  Const(
+                   1
+                  ) [Const]
+                ) [CommonTerm]
+              ) [TermExpr]
+            ) [PrintStmt]
+          ) [Statements]
+          PrintStmt(
+            TermExpr(
+              CommonTerm(
+                Const(
+                 2
+                ) [Const]
+              ) [CommonTerm]
+            ) [TermExpr]
+          ) [PrintStmt]
+        ) [Statements]
+        PrintStmt(
+          TermExpr(
+            CommonTerm(
+              Const(
+               3
+              ) [Const]
+            ) [CommonTerm]
+          ) [TermExpr]
+        ) [PrintStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  02:11:39,695 - ===================================
+INFO  02:11:39,696 - Obradjuje se funkija main
+INFO  02:11:39,696 - Print count calls = 0
+INFO  02:11:39,696 - VarDecl count = 5
+INFO  02:11:39,698 - ===================================
+INFO  02:11:39,703 - Parsiranje uspesno zavrseno!

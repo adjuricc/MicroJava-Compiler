@@ -1,0 +1,15 @@
+// Test301
+
+program test301
+	int x;
+{
+    void main() 
+    {	
+    	x = 3;
+    		
+    	print(1);
+    	print(x);
+    	print('a');
+    	print(true);
+    }
+}

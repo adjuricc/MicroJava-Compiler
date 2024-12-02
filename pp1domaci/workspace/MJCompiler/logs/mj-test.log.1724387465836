@@ -1,0 +1,283 @@
+INFO  06:30:02,173 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  06:30:02,212 - #2 program
+INFO  06:30:02,212 - #37 test301
+INFO  06:30:02,212 - #35 const
+INFO  06:30:02,214 - #37 int
+INFO  06:30:02,214 - #37 nula
+INFO  06:30:02,215 - #32 =
+INFO  06:30:02,215 - #36 0
+INFO  06:30:02,216 - #5 ;
+INFO  06:30:02,217 - #35 const
+INFO  06:30:02,218 - #37 int
+INFO  06:30:02,219 - #37 jedan
+INFO  06:30:02,219 - #32 =
+INFO  06:30:02,219 - #36 1
+INFO  06:30:02,219 - #5 ;
+INFO  06:30:02,219 - #35 const
+INFO  06:30:02,219 - #37 int
+INFO  06:30:02,219 - #37 pet
+INFO  06:30:02,219 - #32 =
+INFO  06:30:02,220 - #36 5
+INFO  06:30:02,220 - #5 ;
+INFO  06:30:02,220 - #37 int
+INFO  06:30:02,221 - #37 niz
+INFO  06:30:02,221 - #15 [
+INFO  06:30:02,221 - #16 ]
+INFO  06:30:02,221 - #5 ;
+INFO  06:30:02,223 - #37 char
+INFO  06:30:02,224 - #37 nizch
+INFO  06:30:02,224 - #15 [
+INFO  06:30:02,224 - #16 ]
+INFO  06:30:02,225 - #5 ;
+INFO  06:30:02,225 - #37 int
+INFO  06:30:02,225 - #37 a
+INFO  06:30:02,225 - #5 ;
+INFO  06:30:02,225 - #3 {
+INFO  06:30:02,225 - #13 void
+INFO  06:30:02,226 - #14 main
+INFO  06:30:02,226 - #6 (
+INFO  06:30:02,227 - #7 )
+INFO  06:30:02,227 - #37 int
+INFO  06:30:02,227 - #37 bodovi
+INFO  06:30:02,227 - #5 ;
+INFO  06:30:02,227 - #37 bool
+INFO  06:30:02,227 - #37 bt
+INFO  06:30:02,227 - #5 ;
+INFO  06:30:02,228 - #3 {
+INFO  06:30:02,228 - #37 niz
+INFO  06:30:02,228 - #32 =
+INFO  06:30:02,230 - #17 new
+INFO  06:30:02,230 - #37 int
+INFO  06:30:02,230 - #15 [
+INFO  06:30:02,230 - #36 3
+INFO  06:30:02,230 - #16 ]
+INFO  06:30:02,231 - #5 ;
+INFO  06:30:02,231 - #37 niz
+INFO  06:30:02,231 - #15 [
+INFO  06:30:02,231 - #36 0
+INFO  06:30:02,231 - #16 ]
+INFO  06:30:02,232 - #32 =
+INFO  06:30:02,232 - #36 1
+INFO  06:30:02,232 - #5 ;
+INFO  06:30:02,232 - #11 print
+INFO  06:30:02,233 - #6 (
+INFO  06:30:02,233 - #37 niz
+INFO  06:30:02,233 - #15 [
+INFO  06:30:02,233 - #36 0
+INFO  06:30:02,233 - #16 ]
+INFO  06:30:02,233 - #7 )
+INFO  06:30:02,233 - #5 ;
+INFO  06:30:02,233 - #4 }
+INFO  06:30:02,233 - #4 }
+INFO  06:30:02,255 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  ConstDeclarations(
+    ConstDeclarations(
+      ConstDeclarations(
+        NoConstDecl(
+        ) [NoConstDecl]
+        ConstDecl(
+          Type(
+           int
+          ) [Type]
+          ConstListOne(
+            ConstDef(
+             nula
+              ConstNumber(
+               0
+              ) [ConstNumber]
+            ) [ConstDef]
+          ) [ConstListOne]
+        ) [ConstDecl]
+      ) [ConstDeclarations]
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        ConstListOne(
+          ConstDef(
+           jedan
+            ConstNumber(
+             1
+            ) [ConstNumber]
+          ) [ConstDef]
+        ) [ConstListOne]
+      ) [ConstDecl]
+    ) [ConstDeclarations]
+    ConstDecl(
+      Type(
+       int
+      ) [Type]
+      ConstListOne(
+        ConstDef(
+         pet
+          ConstNumber(
+           5
+          ) [ConstNumber]
+        ) [ConstDef]
+      ) [ConstListOne]
+    ) [ConstDecl]
+  ) [ConstDeclarations]
+  VarDeclarations(
+    VarDeclarations(
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          VarListOne(
+            VarType(
+             niz
+              VarArray(
+              ) [VarArray]
+            ) [VarType]
+          ) [VarListOne]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      VarDecl(
+        Type(
+         char
+        ) [Type]
+        VarListOne(
+          VarType(
+           nizch
+            VarArray(
+            ) [VarArray]
+          ) [VarType]
+        ) [VarListOne]
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarListOne(
+        VarType(
+         a
+          VarNoArray(
+          ) [VarNoArray]
+        ) [VarType]
+      ) [VarListOne]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MainMethod(
+      ) [MainMethod]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarListOne(
+              VarType(
+               bodovi
+                VarNoArray(
+                ) [VarNoArray]
+              ) [VarType]
+            ) [VarListOne]
+          ) [VarDecl]
+        ) [VarDeclarations]
+        VarDecl(
+          Type(
+           bool
+          ) [Type]
+          VarListOne(
+            VarType(
+             bt
+              VarNoArray(
+              ) [VarNoArray]
+            ) [VarType]
+          ) [VarListOne]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        Statements(
+          Statements(
+            NoStmt(
+            ) [NoStmt]
+            Assignment(
+              Designator(
+               niz
+                DesignatorNoPart(
+                ) [DesignatorNoPart]
+              ) [Designator]
+              TermExpr(
+                CommonTerm(
+                  NewExpr(
+                    Type(
+                     int
+                    ) [Type]
+                    TermExpr(
+                      CommonTerm(
+                        Const(
+                         3
+                        ) [Const]
+                      ) [CommonTerm]
+                    ) [TermExpr]
+                  ) [NewExpr]
+                ) [CommonTerm]
+              ) [TermExpr]
+            ) [Assignment]
+          ) [Statements]
+          Assignment(
+            Designator(
+             niz
+              DesignatorArray(
+                TermExpr(
+                  CommonTerm(
+                    Const(
+                     0
+                    ) [Const]
+                  ) [CommonTerm]
+                ) [TermExpr]
+              ) [DesignatorArray]
+            ) [Designator]
+            TermExpr(
+              CommonTerm(
+                Const(
+                 1
+                ) [Const]
+              ) [CommonTerm]
+            ) [TermExpr]
+          ) [Assignment]
+        ) [Statements]
+        PrintStmt(
+          TermExpr(
+            CommonTerm(
+              Var(
+                Designator(
+                 niz
+                  DesignatorArray(
+                    TermExpr(
+                      CommonTerm(
+                        Const(
+                         0
+                        ) [Const]
+                      ) [CommonTerm]
+                    ) [TermExpr]
+                  ) [DesignatorArray]
+                ) [Designator]
+              ) [Var]
+            ) [CommonTerm]
+          ) [TermExpr]
+        ) [PrintStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  06:30:02,256 - ===================================
+INFO  06:30:02,261 - Obradjuje se funkija main
+INFO  06:30:02,261 - Print count calls = 0
+INFO  06:30:02,261 - VarDecl count = 5
+INFO  06:30:02,261 - ===================================
+INFO  06:30:02,279 - Parsiranje uspesno zavrseno!

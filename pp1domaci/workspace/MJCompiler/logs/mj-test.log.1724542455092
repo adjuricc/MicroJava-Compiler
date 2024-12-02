@@ -1,0 +1,202 @@
+INFO  01:33:53,886 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  01:33:53,903 - #2 program
+INFO  01:33:53,903 - #37 EqualDeclaration
+INFO  01:33:53,903 - #37 int
+INFO  01:33:53,904 - #37 mat
+INFO  01:33:53,905 - #15 [
+INFO  01:33:53,905 - #16 ]
+INFO  01:33:53,905 - #15 [
+INFO  01:33:53,905 - #16 ]
+INFO  01:33:53,905 - #5 ;
+INFO  01:33:53,906 - #3 {
+INFO  01:33:53,907 - #13 void
+INFO  01:33:53,907 - #14 main
+INFO  01:33:53,907 - #6 (
+INFO  01:33:53,907 - #7 )
+INFO  01:33:53,907 - #3 {
+INFO  01:33:53,907 - #37 mat
+INFO  01:33:53,908 - #32 =
+INFO  01:33:53,909 - #17 new
+INFO  01:33:53,910 - #37 int
+INFO  01:33:53,910 - #15 [
+INFO  01:33:53,910 - #36 2
+INFO  01:33:53,911 - #16 ]
+INFO  01:33:53,911 - #15 [
+INFO  01:33:53,911 - #36 3
+INFO  01:33:53,911 - #16 ]
+INFO  01:33:53,912 - #5 ;
+INFO  01:33:53,912 - #37 mat
+INFO  01:33:53,912 - #15 [
+INFO  01:33:53,912 - #37 nula
+INFO  01:33:53,912 - #16 ]
+INFO  01:33:53,912 - #15 [
+INFO  01:33:53,912 - #37 jedan
+INFO  01:33:53,912 - #18 -
+INFO  01:33:53,912 - #36 1
+INFO  01:33:53,913 - #16 ]
+INFO  01:33:53,913 - #32 =
+INFO  01:33:53,913 - #37 jedan
+INFO  01:33:53,913 - #5 ;
+INFO  01:33:53,913 - #11 print
+INFO  01:33:53,913 - #6 (
+INFO  01:33:53,913 - #37 mat
+INFO  01:33:53,913 - #15 [
+INFO  01:33:53,913 - #36 0
+INFO  01:33:53,913 - #16 ]
+INFO  01:33:53,913 - #15 [
+INFO  01:33:53,913 - #36 0
+INFO  01:33:53,913 - #16 ]
+INFO  01:33:53,913 - #7 )
+INFO  01:33:53,913 - #5 ;
+INFO  01:33:53,913 - #4 }
+INFO  01:33:53,914 - #4 }
+INFO  01:33:53,918 - Program(
+  ProgName(
+   EqualDeclaration
+  ) [ProgName]
+  NoConstDecl(
+  ) [NoConstDecl]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarListOne(
+        VarType(
+         mat
+          VarMatrix(
+          ) [VarMatrix]
+        ) [VarType]
+      ) [VarListOne]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MainMethod(
+      ) [MainMethod]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          Statements(
+            NoStmt(
+            ) [NoStmt]
+            Assignment(
+              Designator(
+               mat
+                DesignatorNoPart(
+                ) [DesignatorNoPart]
+              ) [Designator]
+              TermExpr(
+                CommonTerm(
+                  NewFactorMatrix(
+                    Type(
+                     int
+                    ) [Type]
+                    TermExpr(
+                      CommonTerm(
+                        Const(
+                         2
+                        ) [Const]
+                      ) [CommonTerm]
+                    ) [TermExpr]
+                    TermExpr(
+                      CommonTerm(
+                        Const(
+                         3
+                        ) [Const]
+                      ) [CommonTerm]
+                    ) [TermExpr]
+                  ) [NewFactorMatrix]
+                ) [CommonTerm]
+              ) [TermExpr]
+            ) [Assignment]
+          ) [Statements]
+          Assignment(
+            Designator(
+             mat
+              DesignatorMatrix(
+                TermExpr(
+                  CommonTerm(
+                    Var(
+                      Designator(
+                       nula
+                        DesignatorNoPart(
+                        ) [DesignatorNoPart]
+                      ) [Designator]
+                    ) [Var]
+                  ) [CommonTerm]
+                ) [TermExpr]
+                AddExpr(
+                  TermExpr(
+                    CommonTerm(
+                      Var(
+                        Designator(
+                         jedan
+                          DesignatorNoPart(
+                          ) [DesignatorNoPart]
+                        ) [Designator]
+                      ) [Var]
+                    ) [CommonTerm]
+                  ) [TermExpr]
+                  AddopMinus(
+                  ) [AddopMinus]
+                  CommonTerm(
+                    Const(
+                     1
+                    ) [Const]
+                  ) [CommonTerm]
+                ) [AddExpr]
+              ) [DesignatorMatrix]
+            ) [Designator]
+            TermExpr(
+              CommonTerm(
+                Var(
+                  Designator(
+                   jedan
+                    DesignatorNoPart(
+                    ) [DesignatorNoPart]
+                  ) [Designator]
+                ) [Var]
+              ) [CommonTerm]
+            ) [TermExpr]
+          ) [Assignment]
+        ) [Statements]
+        PrintStmt(
+          TermExpr(
+            CommonTerm(
+              Var(
+                Designator(
+                 mat
+                  DesignatorMatrix(
+                    TermExpr(
+                      CommonTerm(
+                        Const(
+                         0
+                        ) [Const]
+                      ) [CommonTerm]
+                    ) [TermExpr]
+                    TermExpr(
+                      CommonTerm(
+                        Const(
+                         0
+                        ) [Const]
+                      ) [CommonTerm]
+                    ) [TermExpr]
+                  ) [DesignatorMatrix]
+                ) [Designator]
+              ) [Var]
+            ) [CommonTerm]
+          ) [TermExpr]
+        ) [PrintStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  01:33:53,919 - ===================================
+INFO  01:33:53,920 - Obradjuje se funkija main
+ERROR 01:33:53,921 - Greska na liniji 7 : ime nula nije deklarisano!

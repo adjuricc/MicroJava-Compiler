@@ -1,0 +1,18 @@
+program MJProgram
+	int x, y[];
+	bool found;
+	char c;
+{
+	int main(){
+		y = 3;
+		
+		x = y + 5;
+		
+		found = true;
+		
+		c = 'a';
+		
+		print(x);
+		return;
+	}
+}

@@ -1,0 +1,45 @@
+INFO  11:10:04,288 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  11:10:04,304 - #2 program
+INFO  11:10:04,304 - #34 test301
+INFO  11:10:04,304 - #32 const
+INFO  11:10:04,305 - #34 int
+INFO  11:10:04,305 - #34 nula
+INFO  11:10:04,306 - #29 =
+INFO  11:10:04,306 - #33 0
+INFO  11:10:04,306 - #5 ;
+INFO  11:10:04,306 - #32 const
+INFO  11:10:04,307 - #34 int
+INFO  11:10:04,307 - #34 jedan
+INFO  11:10:04,307 - #29 =
+INFO  11:10:04,307 - #33 1
+INFO  11:10:04,307 - #5 ;
+INFO  11:10:04,307 - #32 const
+INFO  11:10:04,307 - #34 int
+INFO  11:10:04,307 - #34 pet
+INFO  11:10:04,308 - #29 =
+INFO  11:10:04,308 - #33 5
+INFO  11:10:04,308 - #5 ;
+INFO  11:10:04,308 - #34 int
+INFO  11:10:04,317 - #34 niz
+INFO  11:10:04,317 - #13 [
+INFO  11:10:04,317 - #14 ]
+INFO  11:10:04,317 - #5 ;
+INFO  11:10:04,317 - #34 char
+INFO  11:10:04,318 - #34 nizch
+INFO  11:10:04,318 - #13 [
+INFO  11:10:04,318 - #14 ]
+INFO  11:10:04,318 - #5 ;
+INFO  11:10:04,318 - #34 int
+INFO  11:10:04,318 - #34 var
+INFO  11:10:04,318 - #13 [
+INFO  11:10:04,318 - #33 5
+INFO  11:10:04,318 - #14 ]
+INFO  11:10:04,318 - #5 ;
+INFO  11:10:04,318 - #34 int
+INFO  11:10:04,318 - #34 var
+INFO  11:10:04,318 - #13 [
+INFO  11:10:04,318 - #34 niz
+INFO  11:10:04,318 - #13 [
+ERROR 11:10:04,319 - 
+Sintaksna greska na liniji 12, value: [
+ERROR 11:10:04,319 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 12, value: [

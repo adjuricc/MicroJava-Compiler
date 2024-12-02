@@ -1,0 +1,9 @@
+program EqualDeclaration
+	int mat[][];
+{
+    void main()
+    {
+        mat = new int[4][3];
+        mat[0][0] = 1;
+    }
+}

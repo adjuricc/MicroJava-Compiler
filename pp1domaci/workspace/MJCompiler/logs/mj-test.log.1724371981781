@@ -1,0 +1,80 @@
+INFO  02:12:12,941 - Compiling source file: C:\Users\anjci\OneDrive\Desktop\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  02:12:12,960 - #2 program
+INFO  02:12:12,960 - #37 test301
+INFO  02:12:12,960 - #37 int
+INFO  02:12:12,962 - #37 a
+INFO  02:12:12,962 - #10 ,
+INFO  02:12:12,963 - #37 b
+INFO  02:12:12,963 - #5 ;
+INFO  02:12:12,964 - #3 {
+INFO  02:12:12,965 - #13 void
+INFO  02:12:12,966 - #14 main
+INFO  02:12:12,966 - #6 (
+INFO  02:12:12,966 - #7 )
+INFO  02:12:12,966 - #3 {
+INFO  02:12:12,966 - #11 print
+INFO  02:12:12,967 - #6 (
+INFO  02:12:12,967 - #36 1
+INFO  02:12:12,967 - #7 )
+INFO  02:12:12,967 - #5 ;
+INFO  02:12:12,967 - #4 }
+INFO  02:12:12,967 - #4 }
+INFO  02:12:12,973 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoConstDecl(
+  ) [NoConstDecl]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarListMany(
+        VarListOne(
+          VarType(
+           a
+            VarNoArray(
+            ) [VarNoArray]
+          ) [VarType]
+        ) [VarListOne]
+        VarType(
+         b
+          VarNoArray(
+          ) [VarNoArray]
+        ) [VarType]
+      ) [VarListMany]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MainMethod(
+      ) [MainMethod]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        PrintStmt(
+          TermExpr(
+            CommonTerm(
+              Const(
+               1
+              ) [Const]
+            ) [CommonTerm]
+          ) [TermExpr]
+        ) [PrintStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  02:12:12,973 - ===================================
+INFO  02:12:12,975 - Obradjuje se funkija main
+INFO  02:12:12,975 - Print count calls = 0
+INFO  02:12:12,975 - VarDecl count = 2
+INFO  02:12:12,975 - ===================================
+INFO  02:12:12,983 - Parsiranje uspesno zavrseno!

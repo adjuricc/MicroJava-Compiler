@@ -1,0 +1,56 @@
+package rs.ac.bg.etf.pp1;
+
+import rs.ac.bg.etf.pp1.CounterVisitor.VarCounter;
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.etf.pp1.mj.runtime.Code;
+import rs.etf.pp1.symboltable.Tab;
+import rs.etf.pp1.symboltable.concepts.Obj;
+
+public class CodeGenerator extends VisitorAdaptor {
+	private int mainPc;
+	
+	public int getMainPc() {
+		return mainPc;
+	}
+	
+	public void visit(PrintStmt visitor) {
+		System.out.println(visitor.getExpr().struct == MyTab.intType);
+		if(visitor.getExpr().struct == MyTab.intType || visitor.getExpr().struct == MyTab.boolType) {
+			Code.loadConst(5);
+			Code.put(Code.print);
+		}
+		else {
+			Code.loadConst(1);
+			Code.put(Code.bprint);
+		}
+	}
+	
+	public void visit(MainMethod visitor) {
+		mainPc = Code.pc;
+		visitor.obj.setAdr(Code.pc);
+		
+		SyntaxNode methodNode = visitor.getParent();
+		
+		VarCounter var_cnt = new VarCounter();
+		methodNode.traverseTopDown(var_cnt);
+		
+		// Generate entry
+		Code.put(Code.enter);
+		Code.put(0);
+		Code.put(visitor.obj.getLocalSymbols().size()); // var_cnt.getCount()
+		
+		// exit u method decl
+	}
+	
+	public void visit(MethodDecl visitor) {
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+	}
+	
+	public void visit(Const visitor) {
+		Obj con = Tab.insert(Obj.Con, "$", visitor.struct);
+		con.setLevel(0);
+        con.setAdr(visitor.getI1());
+        Code.load(con);
+	}
+}
